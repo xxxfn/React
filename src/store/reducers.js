@@ -5,12 +5,12 @@ import { combineReducers } from 'redux';
 import HomeReducer from '../pages/Home/store/reducer';
 import CategoryReducer from '../pages/Category/store/reducer';
 import OrderReducer from '../pages/Order/store/reducer';
-import UserReducer from '../pages/User/store/reducer';
+import MyReducer from '../pages/My/store/reducer';
 
 let AllReducers = combineReducers({
   Home: HomeReducer,
   Category: CategoryReducer,
-  User: UserReducer,
+  My: MyReducer,
   Order: OrderReducer
 })
 

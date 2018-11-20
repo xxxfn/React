@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import UserUI from './UserUI';
+import MyUI from './MyUI';
 
 const mapStateToProps = ({ User }) => {
   return {}
@@ -9,4 +9,4 @@ const mapDispatchToProps = (dispatch) => {
   return {}
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(UserUI);
+export default connect(mapStateToProps, mapDispatchToProps)(MyUI);

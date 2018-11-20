@@ -1,18 +1,21 @@
 // 这个是 home ui 组件
 import React from 'react';
-import './User.scss';
+import './My.scss';
 import Footer from '../../components/Footer/index';
+import {NavLink} from 'react-router-dom';
 
 
-const UserUI = (props) => {
+const MyUI = (props) => {
   return (
-    <div className="user">
-      <div className="elm-home">
-        这是用户页面
-      </div>
+    <div className="my">
+     <div className="elm-home">
+      <NavLink to="/register">注册</NavLink>
+      <NavLink to="/login">登录</NavLink>
+
+     </div>
       <Footer />
     </div>
   )
 }
 
-export default UserUI;
+export default MyUI;

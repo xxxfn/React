@@ -25,7 +25,7 @@ class Footer extends Component {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/user">
+          <NavLink to="/my">
             <i className="iconfont icon-Dyanjing"></i>
             <span>我的</span>
           </NavLink>
