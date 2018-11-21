@@ -94,6 +94,9 @@ class Login extends Component{
         if (result.code === 0) {
           // 登录成功
           alert('登录成功');
+          var id = Math.ceil(Math.random() * 100000 + 899999)
+          document.cookie = `username = ${username}`
+          document.cookie = `id = ${id}`
           this.props.history.push('/my');
         } else if(result.code === -2){
           alert('用户名或密码错误');
