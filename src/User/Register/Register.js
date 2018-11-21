@@ -3,6 +3,7 @@ import './register.scss';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
+
 class Register extends Component{
   constructor(props){
     super(props);
@@ -82,24 +83,37 @@ class Register extends Component{
     }
   }
   zxsregister(event){
-    event.preventDefault(); //按下按钮, 但是不会跳转页面
-    fetch('http://localhost:9090/api', {
-      headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json'
-      },
-      method:'post',
-      body: JSON.stringify({comment:"Finally, we got it!!!!" })
-    })
+
     let username=this.state.inputVal1;
     let password=this.state.inputVal2;
-    if(username===''||password===''){
+
+     if(username===''||password===''){
+      alert('用户名或密码不能为空');
+     }else{
+      axios.post('http://localhost:4000/register',{
+        username:username,
+        password:password
+      })
+      .then(res => {
+        console.log(res);
+        var result=res.data;
+        if(result.code===0){
+          alert('注册成功');
+          this.props.history.push('/login');
+        }else if(result.code===-2){
+          alert(result.msg);
+        }else{
+          alert('注册失败');
+        }
+      })
+     }
+    /* if(username===''||password===''){
       alert('用户名或密码不能为空');
     }else{
       axios.post('/api/user/onlyuser',{
         username:username
       },{
-        baseURL:'http://localhost:9090',
+        baseURL:'http://localhost:8080',
         //httpAgent: new http.Agent({ keepAlive: true }),
         // proxy: {
         //   host: 'localhost',
@@ -118,7 +132,7 @@ class Register extends Component{
              username:username,
              password:password
            },{
-            baseURL:'http://localhost:9090',
+            baseURL:'http://localhost:8080',
             //httpAgent: new http.Agent({ keepAlive: true }),
             // proxy: {
             //   host: 'localhost',
@@ -136,7 +150,7 @@ class Register extends Component{
            })
          }
       })
-    }
+    } */
   }
 }
 export default Register;

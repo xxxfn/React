@@ -8298,8 +8298,8 @@ react-app-polyfill@^0.1.3:
 
 react-app-rewired@^1.6.2:
   version "1.6.2"
-  resolved "http://registry.npm.taobao.org/react-app-rewired/download/react-app-rewired-1.6.2.tgz#32ce90abc2c4e2b86c71e4e270bd36663b3b1c9a"
-  integrity sha1-Ms6Qq8LE4rhsceTicL02Zjs7HJo=
+  resolved "https://registry.yarnpkg.com/react-app-rewired/-/react-app-rewired-1.6.2.tgz#32ce90abc2c4e2b86c71e4e270bd36663b3b1c9a"
+  integrity sha512-TxbP1W9jPPTmj0YJeFNgcJc6IMg7sv845aHUIUvVQtXdA8IWzOZairk3Bth6GHbxoF2QitbvUlM7/NAH4VmmJg==
   dependencies:
     cross-spawn "^5.1.0"
     dotenv "^4.0.0"
