@@ -10,6 +10,7 @@ import Home from './pages/Home/Home';
 import Category from './pages/Category/Category';
 import Order from './pages/Order/Order';
 import User from './pages/User/User';
+import Details from './pages/Details/Details'
 const App = () => {
   return (
     <Provider store={store}>
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/category" component={Category} />
           <Route path="/order" component={Order} />
           <Route path="/user" component={User} />
+          <Route path="/details/:id/:offset" component={Details} />
         </Fragment>
       </Router>
     </Provider>
