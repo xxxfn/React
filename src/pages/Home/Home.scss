@@ -35,9 +35,16 @@
     }
     .cfj-home-activity{
       height: 150px;
+      .slider-frame{
+        // overflow: visible !important;
+        height: 160px !important;
+      }
+      .am-flexbox{
+        overflow: visible !important;
+      }
     }
     .cfj-banner{
-      margin-top: 10px;
+      margin-top: 20px;
       .am-wingblank.am-wingblank-lg{
         margin: 7px;
       }
@@ -82,6 +89,10 @@
       .cfj-recommend-list{
         ul{
           // overflow: hidden;
+          a{
+            display: block;
+            color: #666666;
+          }
           li{
             clear: both;
             // width: 375px;
@@ -105,13 +116,25 @@
                 flex-direction: column;
                 justify-content: space-between;
                 .shopname{
-
+                  color: #333;
                 }
                 .shopnum{
                   font-size: 10px;
+                  span{
+                    display: inline-block;
+                    overflow: hidden;
+                  }
+                  .ppp{
+                    padding: 0 5px;
+                  }
                 }
                 .shopprice{
                   font-size: 10px;
+                  display: flex;
+                  justify-content: space-between;
+                  div{
+                    margin-right: 15px;
+                  }
                 }
               }
             }
@@ -131,7 +154,8 @@
                   // height: 15px;
                   padding: 2px;
                   color: rgb(51, 51, 51);
-                  border:1px solid #999;
+                  // border:1px solid #999;
+                  // border: dddddd;
                 }
               }
               .nowactive{
@@ -158,5 +182,5 @@
 }
 .am-grid.am-grid-square .am-grid-item .am-grid-item-inner-content .am-grid-icon {
     margin-top: 9px;
-    width: 45%!important;
+    width: 65%!important;
 }
