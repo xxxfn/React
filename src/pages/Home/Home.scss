@@ -2,7 +2,161 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  // overflow: hidden;
+  background: #ffffff;
   .elm-home {
     flex: 1;
+    background: #ffffff;
+    .cfj-header{
+      padding: 10px;
+      background: #0085ff;
+      color: #ffffff;
+      width: 100%;
+      height: 50px;
+      .cfj-adress{
+        height: 30px;
+        line-height: 30px;
+        width: 60%;
+        font-weight: 700;
+      }
+
+    }
+    .cfj-seach{
+      margin-top: -1px;
+      background: #0085ff;
+      position: sticky;
+      top: -1px;
+      z-index: 99;
+      border: 0;
+      .am-search {
+        border: 0;
+        background: #0085ff;
+      }
+    }
+    .cfj-home-activity{
+      height: 150px;
+    }
+    .cfj-banner{
+      margin-top: 10px;
+      .am-wingblank.am-wingblank-lg{
+        margin: 7px;
+      }
+    }
+    .cfj-recommend{
+      .cfj-recommend-tit{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 46px;
+        font-size: 12px;
+        color: #000;
+      }
+      .cfj-recommend-tit:before{
+        margin-right: 10px;
+        display: block;
+        content: "";
+        width: 25px;
+        height: 2px;
+        background-color: #999;
+      }
+      .cfj-recommend-tit:after{
+        margin-left: 10px;
+        display: block;
+        content: "";
+        width: 25px;
+        height: 2px;
+        background-color: #999;
+      }
+      .cfj-recommend-title{
+        ul{
+          display: flex;
+          text-align: center;
+          justify-content: space-around;
+          height: 40px;
+          border-bottom: 1px solid #ddd;
+          li{
+            line-height: 40px;
+          }
+        }
+      }
+      .cfj-recommend-list{
+        ul{
+          // overflow: hidden;
+          li{
+            clear: both;
+            // width: 375px;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            .shopinfo{
+              display: flex;
+              .shopimg{
+                border: 1px solid rgba(0,0,0,.08);
+                width: 67px;
+                height: 67px;
+                margin: 0 15px;
+                img{
+                  width: 65px;
+                  height: 65px;
+                }
+              }
+              .shopbody{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .shopname{
+
+                }
+                .shopnum{
+                  font-size: 10px;
+                }
+                .shopprice{
+                  font-size: 10px;
+                }
+              }
+            }
+            .shopactive{
+              margin-left: 95px;
+              height: 70px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              .shoptag{
+                display: flex;
+                span{
+                  font-size: 10px;
+                  display: block;
+                  margin: 0 2px;
+                  border-radius: 2px;
+                  // height: 15px;
+                  padding: 2px;
+                  color: rgb(51, 51, 51);
+                  border:1px solid #999;
+                }
+              }
+              .nowactive{
+                width: 195px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                vertical-align: middle;
+                font-size: 10px;
+                span{
+                  display: inline-block;
+                  padding: 1px;
+                  border-radius: 1px;
+                  margin-right: 3px;
+                  color: #ffffff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
+}
+.am-grid.am-grid-square .am-grid-item .am-grid-item-inner-content .am-grid-icon {
+    margin-top: 9px;
+    width: 45%!important;
 }
