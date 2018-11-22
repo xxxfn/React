@@ -1,0 +1,53 @@
+.businness{
+  background-color: #f5f5f5;
+  font-size: 16px;
+  overflow-y: auto;
+  .section{
+    margin-bottom: .266667rem;
+    padding: 16px 15px 15px 15px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #666;
+    border-bottom: 1px solid #eee;
+    img{
+      width: 345px;
+      height: 195px;
+      margin-bottom: 16px;
+    }
+    .delis{
+      color: #333;
+      font-weight: 700;
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+    .word{
+      font-size: 12px;
+      line-height: 16px;;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .look{
+      margin: 15px 0 -15px;
+      text-align: center;
+      font-size: 16px;
+      padding: 15px 0;
+    }
+    .song{
+      color: #000;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 28px;
+    }
+    .delive{
+      margin-top: 16px;
+      .peishong{
+        margin-bottom: 7px;
+        font-size: 12px;
+      }
+    }
+    .hua{
+      margin-bottom: 7px;
+      font-size: 12px;
+    }
+  }
+}

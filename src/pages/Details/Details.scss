@@ -1,3 +1,7 @@
+// #all{
+//   display: flex;
+//   flex-direction: column;
+// }
 .app-dps8r{
   position:relative;
   color: #333;
@@ -82,4 +86,36 @@
       padding-bottom:5px;
     }
   }
+}
+.heade{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  .navil{
+    display: flex;
+    background: #fff;
+    li{
+      flex: 1;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      p{
+        box-sizing: border-box;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 700;
+        color: #999999;
+      }
+      .liact{
+        border-bottom: 2px solid blue;
+        color: #333;
+      }
+    }
+  }
+}
+.zact{
+  display:block;
+}
+.hid{
+  display: none;
 }

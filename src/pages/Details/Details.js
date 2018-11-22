@@ -12,12 +12,19 @@ class Details extends Component{
       imgs:'',
       list:[],
       morelist:[],
+      nav:1
     }
+  }
+  change(index){
+    console.log(index);
+    this.setState({
+      nav:index
+    })
   }
   render(){
     return(
       <DetailsUI data={this.state.data} imgs={this.state.imgs} list={this.state.list}
-      morelist={this.state.morelist}
+      morelist={this.state.morelist } change={this.change.bind(this)} nav={this.state.nav}
       ></DetailsUI>
     )
   }

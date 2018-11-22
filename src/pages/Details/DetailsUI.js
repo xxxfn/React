@@ -1,12 +1,12 @@
 import React from 'react';
 import './Details.scss';
-import { Icon,Tabs } from 'antd-mobile';
+import { Icon} from 'antd-mobile';
 import Order from './Order.js';
 import Evaluate from './Evaluate.js';
 import Business from './Business.js';
 const HomeUI = (props) => {
   return (
-    <div>
+    <div id="all">
       <div className="app-dps8r">
         <div className="nav">
         </div>
@@ -42,7 +42,7 @@ const HomeUI = (props) => {
           </div>
         </div>
       </div>
-      <Tabs tabBarPosition="top"
+      {/* <Tabs tabBarPosition="top"
       tabs={
         [
           { title: '点餐' },
@@ -51,8 +51,6 @@ const HomeUI = (props) => {
         ]
       }
       initialPage="1"
-      onChange={(tab, index) => { console.log('onChange', index, tab); }}
-      onTabClick={(tab, index) => { console.log('onTabClick', index, tab); }}
       swipeable={false}
       >
         <div style={{backgroundColor: '#fff' }}>
@@ -64,7 +62,31 @@ const HomeUI = (props) => {
         <div style={{backgroundColor: '#fff' }}>
         <Business list={props.list}></Business>
         </div>
-      </Tabs>
+      </Tabs> */}
+      <div className="naveli">
+        <div className="heade">
+          <ul className="navil">
+            <li onClick={()=>{props.change(1)}}>
+              <p className={props.nav===1?"liact":""}>点餐</p>
+            </li>
+            <li onClick={()=>{props.change(2)}}>
+              <p className={props.nav===2?"liact":""}>评价</p>
+            </li>
+            <li onClick={()=>{props.change(3)}}>
+              <p className={props.nav===3?"liact":""}>商家</p>
+            </li>
+          </ul>
+        </div>
+        <div style={{backgroundColor: '#fff' }} className={props.nav===1?"zact":"hid"}>
+        <Order list={props.list} morelist={props.morelist} food={props.food}></Order>
+        </div>
+        <div style={{backgroundColor: '#fff' }} className={props.nav===2?"zact":"hid"}>
+        <Evaluate list={props.list}></Evaluate>
+        </div>
+        <div style={{backgroundColor: '#fff' }} className={props.nav===3?"zact":"hid"}>
+        <Business list={props.list}></Business>
+        </div>
+      </div>
     </div>
     )
 }
