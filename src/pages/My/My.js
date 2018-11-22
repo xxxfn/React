@@ -36,7 +36,7 @@ class My extends Component{
     // var username=getCookie('username');
     if(getCookie('username')){
       this.setState({
-        head:`用户:${getCookie('username')}`,
+        head:`尊敬的用户${getCookie('username')}`,
         headp:`ID:${getCookie('id')}`,
         remove:'退出登录'
       })
@@ -64,7 +64,7 @@ class My extends Component{
       }
       if(getCookie('username')){
         this.setState({
-          head:`用户:${getCookie('username')}`,
+          head:`尊敬的用户${getCookie('username')}`,
           headp:`ID:${getCookie('id')}`,
           remove:'退出登录'
         })

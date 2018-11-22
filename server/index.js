@@ -21,7 +21,7 @@ app.post('/login', function (req, res) {
 	var body = '';
 
 	var client = mysql.createConnection({
-		host     : 'localhost',
+		host     : '10.36.134.39',
 		user     : 'root',
 		password : '',
 		database : 'userinfo'
@@ -40,7 +40,7 @@ app.post('/login', function (req, res) {
 
 		// 数据库一个链接
 		client.connect();
-		var sql = `select * from user where uname='${username}' and upwd='${password}'`;
+		var sql = `select * from users where uname='${username}' and upwd='${password}'`;
 		client.query(sql, function(err, results, fields) {
 			if (err) {
 				console.log(err);
@@ -65,7 +65,7 @@ app.post('/register', function (req, res) {
 	console.log('进入注册');
    var body='';
    var client=mysql.createConnection({
-   	host:'localhost',
+   	host:'10.36.134.39',
    	user:'root',
    	password:'',
    	database:'userinfo'
