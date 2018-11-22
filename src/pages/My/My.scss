@@ -1,8 +1,149 @@
-.user{
+.my{
   display: flex;
   flex-direction: column;
   height: 100%;
   .elm-home {
     flex: 1;
+    .zxs-head{
+      height:50px;
+      line-height:50px;
+      width:100%;
+      text-align:center;
+      background:#0092FF;
+      color:white;
+      font-weight:700;
+      font-size:18px;
+      position:relative;
+      .zxs-headerimg{
+        position:absolute;
+        top:19px;;
+        left:15px;
+      }
+    }
+    .zxs-profile{
+      display: flex;
+      background-image: linear-gradient(90deg,#0af,#0085ff);
+      //padding: .666667rem .4rem;
+      padding: 15px 9px;
+      color: #fff;
+      align-items: center;
+      position:relative;
+      .zxs-tou{
+        border-radius: 50%;
+        width:70px;
+        height:70px;
+      }
+      .zxs-p{
+        margin-left:20px;
+        .zxs-register{
+          font-size:18px;
+          color:white;
+        }
+        .register-p1{
+          font-size:14px;
+          margin-top:10px;
+        }
+        .register-p2{
+          font-size:14px;
+          margin-top:10px;
+          color:white;
+        }
+        .zxs-img3{
+          position:absolute;
+          right:20px;
+          top:52px;
+        }
+      }
+    }
+    .zxs-maininfo{
+      width: 100%;
+      border-bottom: 1px solid #ddd;
+      background-color: #fff;
+      display:flex;
+      //align-items:center;
+      li{
+        // margin-right:90px;
+        width:33.333%;
+        text-align:center;
+        //padding:30px 0;
+        border-right:1px solid #F3F3F3;
+        span{
+          display:block;
+          margin-top:45px;
+          margin-bottom:18px;
+        }
+      }
+      li:first-of-type{
+        background:url('../../images/zxs-money.png') no-repeat 49px 16px;
+      }
+      li:nth-of-type(2){
+        background:url('../../images/zxs-red.png') no-repeat 44px 9px;
+      }
+      li:nth-of-type(3){
+        background:url('../../images/zxs-green.png') no-repeat 49px 18px;
+      }
+    }
+    .address{
+      background:white;
+      padding:15px 0;
+      border-top:1px solid #EAEAEA;
+      border-bottom:1px solid #EAEAEA;
+      margin-top:10px;
+      font-size:16px;
+      position:relative;
+      span{
+        padding-left:36px;
+        background:url('../../images/zxs-address.png') no-repeat 10px center;
+      }
+      .huiyou1{
+        position:absolute;
+        right:15px;
+        top:20px;
+      }
+    }
+    .share{
+      background:white;
+      margin-top:10px;
+      li{
+        padding:15px 0;
+        border-bottom:1px solid #EAEAEA;
+        padding-left:36px;
+        font-size:16px;
+      }
+      li:first-of-type{
+        background:url('../../images/zxs-bag.png') no-repeat 10px center;
+        img{
+          margin-left:253px;
+        }
+      }
+      li:nth-of-type(2){
+        background:url('../../images/zxs-present.png') no-repeat 10px center;
+        img{
+          margin-left:201px;
+        }
+      }
+    }
+    .link{
+      background:white;
+      margin-top:10px;
+      li{
+        padding:15px 0;
+        border-bottom:1px solid #EAEAEA;
+        padding-left:36px;
+        font-size:16px;
+      }
+      li:first-of-type{
+        background:url('../../images/zxs-link.png') no-repeat 10px center;
+        img{
+          margin-left:253px;
+        }
+      }
+      li:nth-of-type(2){
+        background:url('../../images/zxs-e.png') no-repeat 10px center;
+        img{
+          margin-left:205px;
+        }
+      }
+    }
   }
 }
