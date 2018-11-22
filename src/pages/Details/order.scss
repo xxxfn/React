@@ -1,0 +1,84 @@
+.recommend{
+  padding-top: 10px;;
+  background-color: #fff;
+  .recommend_bu{
+    padding-left: 16px;;
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 13px;;
+  }
+  .li{
+    overflow-x: scroll;
+    display: flex;
+    padding-left: 12px;
+    padding-right: 12px;
+    .lire{
+      margin-right: 10px;
+      width: 120px;
+      padding-bottom: 16px;
+      flex: none;
+      position: relative;
+      img{
+        width:120px;
+      }
+      .nameli{
+        color: #333;
+        font-size:14px;
+        margin: 14px 0 7px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      .nies{
+        color: #999;
+        font-size: 12px;
+        margin-bottom: 9px;
+        min-height: 1em;
+      }
+      .food{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .car{
+          color: rgb(255, 83, 57);
+          font-size: 14px;
+        }
+      }
+    }
+    .line{
+      height: 6px;
+      width: 100%;
+      position: absolute;
+      background:white;
+      top: 238px;
+      margin-left: -12px;
+    }
+  }
+}
+.morlist{
+  display: flex;
+  height: 100%;
+  .muneca{
+    overflow-y: auto;
+    height: 100%;
+    background-color: #f8f8f8;
+    padding-bottom: 40px;
+    position: relative;
+    flex: none;
+    li{
+      height: 49px;
+      width: 77px;
+      font-size: 12px;
+      text-align: center;
+      line-height: 49px;
+
+      a{
+        color: #999;
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

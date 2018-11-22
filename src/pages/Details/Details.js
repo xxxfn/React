@@ -9,12 +9,16 @@ class Details extends Component{
     this.state={
       api:"https://bird.ioliu.cn/v1?url=",
       data:{},
-      imgs:''
+      imgs:'',
+      list:[],
+      morelist:[],
     }
   }
   render(){
     return(
-      <DetailsUI data={this.state.data} imgs={this.state.imgs} ></DetailsUI>
+      <DetailsUI data={this.state.data} imgs={this.state.imgs} list={this.state.list}
+      morelist={this.state.morelist}
+      ></DetailsUI>
     )
   }
   componentDidMount(){
@@ -23,6 +27,7 @@ class Details extends Component{
     var _this=this;
     axios.get(this.state.api+`https://h5.ele.me/restapi/shopping/v3/restaurants?latitude=22.54286&longitude=114.059563&offset=${offset}&limit=8&extras[]=activities&extras[]=tags&extra_filters=home&rank_id=&terminal=h5`).then(result=>{
        var res=result.data;
+       console.log(id);
        console.log(res);
        if(res.has_next){
          for(var i=0;i<res.items.length;i++){
@@ -43,6 +48,13 @@ class Details extends Component{
            }
          }
        }
+    })
+    axios.get("/api/batch_shop.json").then(result=>{
+      _this.setState({
+        list:result.data[0],
+        morelist:result.data[1],
+      })
+      console.log(this.state.morelist[0].food[0])
     })
   }
 }
