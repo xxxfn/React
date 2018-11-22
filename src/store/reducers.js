@@ -6,12 +6,15 @@ import HomeReducer from '../pages/Home/store/reducer';
 import CategoryReducer from '../pages/Category/store/reducer';
 import OrderReducer from '../pages/Order/store/reducer';
 import UserReducer from '../pages/User/store/reducer';
+import DeliciousFood from '../pages/DeliciousFood/store/reducer';
+
 
 let AllReducers = combineReducers({
   Home: HomeReducer,
   Category: CategoryReducer,
   User: UserReducer,
-  Order: OrderReducer
+  Order: OrderReducer,
+  DeliciousFood: DeliciousFood
 })
 
 export default AllReducers;

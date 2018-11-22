@@ -7,6 +7,7 @@ import './Home.scss';
 import { StickyContainer, Sticky } from 'react-sticky';
 import { SearchBar, Grid, WingBlank, Carousel, Tabs, WhiteSpace, Flex } from 'antd-mobile';
 import Footer from '../../components/Footer/index';
+import { NavLink } from 'react-router-dom';
 
 const HomeUI = (props) => {
   const data = props.entries.map((item, index) => ({

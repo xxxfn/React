@@ -1,6 +1,6 @@
 const defaultState = {
   title: '这是订单页',
-  inputVal: '',
+  src: './images/qianqiu.jpg',
   list: []
 }
 
