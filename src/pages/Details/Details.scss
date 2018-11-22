@@ -52,7 +52,7 @@
       display: flex;
       margin: 12px auto 0;
       align-items: center;
-      width: 370px;
+      width: 100%;
       text-align: center;
       .smil{
         display: block;
@@ -66,6 +66,11 @@
       }
       .jian{
         font-size: 12px;
+        display: block;
+        width: 193px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
       }
       .hui{
         font-size: 12px;

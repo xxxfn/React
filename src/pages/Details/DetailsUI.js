@@ -42,27 +42,6 @@ const HomeUI = (props) => {
           </div>
         </div>
       </div>
-      {/* <Tabs tabBarPosition="top"
-      tabs={
-        [
-          { title: '点餐' },
-          { title: '评价' },
-          { title: '商家' }
-        ]
-      }
-      initialPage="1"
-      swipeable={false}
-      >
-        <div style={{backgroundColor: '#fff' }}>
-          <Order list={props.list} morelist={props.morelist} food={props.food}></Order>
-        </div>
-        <div style={{backgroundColor: '#fff' }}>
-        <Evaluate list={props.list}></Evaluate>
-        </div>
-        <div style={{backgroundColor: '#fff' }}>
-        <Business list={props.list}></Business>
-        </div>
-      </Tabs> */}
       <div className="naveli">
         <div className="heade">
           <ul className="navil">
