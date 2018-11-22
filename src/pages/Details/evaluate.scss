@@ -1,0 +1,134 @@
+.ping{
+  background-color: #f5f5f5;
+  overflow-y: auto;
+  .overciew{
+    display: flex;
+    padding: 20px 0 20px 24px;
+    background-color: #fff;
+    align-content: center;
+    margin-bottom: 10px;
+    .fen{
+      font-size: 36px;
+      color: #ff6000;
+    }
+    .shop{
+      color: #666666;
+      font-size: 14px;
+      margin-left: 10px;
+      padding-top:5px;
+    }
+    .bw{
+      margin-left:30px;
+      color: #666666;
+      span{
+        font-size: 14px;
+      }
+      p{
+        font-size: 20px;
+        margin-top: 5px;
+      }
+    }
+    .last{
+      margin-left:60px;
+    }
+  }
+  .lflist{
+    background-color: #fff;
+    padding: 10px 12px 0;
+    font-size: 12px;
+    .btu{
+      padding-bottom: 10px;
+      border-bottom: 1px solid #eee;
+      li{
+        display: inline-block;
+        padding: 0 12px;
+        height: 37px;
+        line-height: 37px;
+        margin: 5px;
+        font-size: 12px;
+        border-radius: 5px;
+        color: #6d7885;
+        background-color: #ebf5ff;
+      }
+      .act{
+        color: #fff;
+        background-color: #0097ff;
+      }
+    }
+    .conten{
+      padding-left: 20px;
+      height: 40px;
+      line-height: 40px;
+      color: #666;
+      border-bottom: 1 solid #eee;
+    }
+    .pinlun{
+      padding: 15px 0 12px;
+      border-bottom: 1 solid #eee;
+      .comment{
+        position: relative;
+        padding-left:40px;
+        .conmmneam{
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-radius: 50%;
+          background:url('../../images/sprite.png');
+          background-position: 0px 240px;
+          background-size:30px;
+        }
+        .neir{
+          font-size: 14px;
+          .nerhead{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h3{
+              font-size: 12px;
+              margin-top: 4px;
+              color: #333;
+              margin-right: 8px;
+              font-weight: normal;
+            }
+            .time{
+              font-size:12px;
+              color: #999;
+            }
+          }
+          .zhan{
+            margin: 6px 0 4px;
+            color: red;
+            font-size: 12px;
+          }
+          .eat{
+            color: #333;
+            font-size: 16px;
+            margin: 8px 0;
+          }
+          .speak{
+            position: relative;
+            margin: 10 0;
+            padding: 10;
+            background: #f3f3f3;
+            border-radius:5px;
+            font-size: 14px;
+            line-height: 20px;
+          }
+          .imgname{
+            margin-top: 8px;
+            margin-bottom:12px;
+            li{
+              display: inline-block;
+              margin: 0 4px;
+              img{
+                height: 150px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+// #all{
+//   display: flex;
+//   flex-direction: column;
+// }
+.app-dps8r{
+  position:relative;
+  color: #333;
+  font-size: 16px;
+  background-color: #fff;
+  .nav{
+    height: 100px;
+    background:url('../../images/log.png');
+    &::before{
+      content:'';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height:100px;
+      width: 100%;
+      background:rgba(0,0,0,.3);
+    }
+  }
+  .index-ccm5A{
+    background: #fff;
+    position: relative;
+    padding-top: 30px;
+    text-align: center;
+    .ph{
+      height: 75px;
+      width: 75px;
+      position: absolute;
+      left: 50%;
+      margin-left: -37.5px;
+      top: -60px;
+      bottom: 0px;
+      img{
+        height: 100%;
+      }
+    }
+    span{
+      margin-right:10px;
+    }
+    .tith{
+      font-size: 20px;
+      margin-bottom: 6px;
+    }
+    .titb{
+      font-size: 12px;
+      color: #333;
+    }
+    .you{
+      display: flex;
+      margin: 12px auto 0;
+      align-items: center;
+      width: 370px;
+      text-align: center;
+      .smil{
+        display: block;
+        width: 30px;
+        height: 18px;
+        font-size: 12px;
+        text-align: center;
+        line-height:18px;
+        color: #fff;
+        margin-left: 14px;
+      }
+      .jian{
+        font-size: 12px;
+      }
+      .hui{
+        font-size: 12px;
+        color: #999999;
+        margin-left: 10px;
+      }
+    }
+    .notice{
+      margin: 8px 0 0;
+      text-align: center;
+      color:#999999;
+      font-size: 12px;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 0 10px;
+      padding-bottom:5px;
+    }
+  }
+}
+.heade{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  .navil{
+    display: flex;
+    background: #fff;
+    li{
+      flex: 1;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      p{
+        box-sizing: border-box;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 700;
+        color: #999999;
+      }
+      .liact{
+        border-bottom: 2px solid blue;
+        color: #333;
+      }
+    }
+  }
+}
+.zact{
+  display:block;
+}
+.hid{
+  display: none;
+}

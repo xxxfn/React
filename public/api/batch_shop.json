@@ -1,0 +1,1129 @@
+[
+[
+  {
+      "activity": {
+          "activity_type": "",
+          "applicable_quantity": 1,
+          "applicable_quantity_detail_text": "每单限1份优惠，超出的分数按原价计算",
+          "applicable_quantity_text": "每单限1份优惠",
+          "applicable_quantity_text_color": "eb6551",
+          "benefit_text": "11元",
+          "description": "台盖",
+          "discount": 1,
+          "fixed_price": 11,
+          "icon_color": "eb6551",
+          "icon_name": "特",
+          "id": 1743356418,
+          "image_text": "特",
+          "image_text_color": "#FAA43C",
+          "is_exclusive": 0,
+          "is_price_changed": true,
+          "is_promotion_toast_popup": true,
+          "max_quantity": 1,
+          "minimum_delivery_rule": 1,
+          "must_super_vip": false,
+          "name": "台盖",
+          "quantity_condition": 1,
+          "quantity_text": "",
+          "sum_condition": 0
+      },
+      "attributes": [],
+      "attrs": [
+          {
+              "name": "甜度",
+              "values": [
+                  "标准糖",
+                  "少糖",
+                  "无糖"
+              ]
+          },
+          {
+              "name": "温度",
+              "values": [
+                  "标准冰",
+                  "去冰"
+              ]
+          }
+      ],
+      "brand": {
+          "attrs2": [
+              {
+                  "details": [
+                      {
+                          "linkage_photo_hash": "",
+                          "name": "标准糖",
+                          "photo_hash": "",
+                          "selected": true
+                      },
+                      {
+                          "linkage_photo_hash": "",
+                          "name": "少糖",
+                          "photo_hash": "",
+                          "selected": false
+                      },
+                      {
+                          "linkage_photo_hash": "",
+                          "name": "无糖",
+                          "photo_hash": "",
+                          "selected": false
+                      }
+                  ],
+                  "linkage_status": 0,
+                  "name": "甜度"
+              },
+              {
+                  "details": [
+                      {
+                          "linkage_photo_hash": "",
+                          "name": "标准冰",
+                          "photo_hash": "",
+                          "selected": true
+                      },
+                      {
+                          "linkage_photo_hash": "",
+                          "name": "去冰",
+                          "photo_hash": "",
+                          "selected": false
+                      }
+                  ],
+                  "linkage_status": 0,
+                  "name": "温度"
+              }
+          ],
+          "ingredient_info": null,
+          "show_photo_type": 0,
+          "specifications2": [
+              {
+                  "details": [
+                      {
+                          "linkage_photo_hash": "",
+                          "name": "默认",
+                          "photo_hash": "",
+                          "selected": true
+                      },
+                      {
+                          "linkage_photo_hash": "",
+                          "name": "分装（加1元）",
+                          "photo_hash": "",
+                          "selected": false
+                      }
+                  ],
+                  "linkage_status": 0,
+                  "name": "规格"
+              }
+          ],
+          "sub_items": []
+      },
+      "category_id": 200000049410935158,
+      "description": "香芋奶盖+奶茶+芋泥+芋圆小丸子，香芋三连击",
+      "image_path": "https://fuss10.elemecdn.com/ee0fe820636d0160f84bc5f7d914ae2cpng.png",
+      "is_essential": false,
+      "is_featured": 0,
+      "item_id": "200000298807576950",
+      "limitation": {},
+      "min_purchase": 1,
+      "month_sales": 25,
+      "name": "满满香芋",
+      "photos": [
+          "ee0fe820636d0160f84bc5f7d914ae2cpng"
+      ],
+      "rating": 2.165,
+      "rating_count": 3,
+      "restaurant_id": 155170043,
+      "satisfy_count": 3,
+      "satisfy_rate": 100,
+      "scheme": "eleme://catering?target_food_id=1543810270&restaurant_id=E17026110126503561707&category_id=200000049410935158",
+      "specfoods": [
+          {
+              "checkout_mode": 1,
+              "food_id": 1543810270,
+              "is_essential": false,
+              "item_id": "200000298807576950",
+              "name": "满满香芋",
+              "original_price": 22,
+              "packing_fee": 0,
+              "pinyin_name": "manmanxiangyu",
+              "price": 11,
+              "promotion_stock": 4,
+              "recent_popularity": 25,
+              "recent_rating": 4.33,
+              "restaurant_id": 155170043,
+              "sku_id": "200000352056508790",
+              "sold_out": false,
+              "specs": [
+                  {
+                      "name": "规格",
+                      "value": "默认"
+                  }
+              ],
+              "stock": 9958,
+              "virtual_food_id": 1491793459,
+              "weight": 0
+          },
+          {
+              "checkout_mode": 1,
+              "food_id": 1543810271,
+              "is_essential": false,
+              "item_id": "200000298807576950",
+              "name": "满满香芋",
+              "packing_fee": 0,
+              "pinyin_name": "manmanxiangyu",
+              "price": 23,
+              "promotion_stock": -1,
+              "recent_popularity": 0,
+              "recent_rating": 0,
+              "restaurant_id": 155170043,
+              "sku_id": "200000352052192630",
+              "sold_out": false,
+              "specs": [
+                  {
+                      "name": "规格",
+                      "value": "分装（加1元）"
+                  }
+              ],
+              "stock": 9998,
+              "virtual_food_id": 1491793459,
+              "weight": 0
+          }
+      ],
+      "specifications": [
+          {
+              "name": "规格",
+              "values": [
+                  "默认",
+                  "分装（加1元）"
+              ]
+          }
+      ],
+      "tips": "3评价 月售25份",
+      "tit":"月售25份",
+      "type": 0,
+      "virtual_food_id": 1491793459
+  },
+  {
+      "attributes": [],
+      "attrs": [
+          {
+              "name": "甜度",
+              "values": [
+                  "标准糖",
+                  "少糖",
+                  "无糖"
+              ]
+          }
+      ],
+      "brand": {
+          "attrs2": [
+              {
+                  "details": [
+                      {
+                          "linkage_photo_hash": "",
+                          "name": "标准糖",
+                          "photo_hash": "",
+                          "selected": true
+                      },
+                      {
+                          "linkage_photo_hash": "",
+                          "name": "少糖",
+                          "photo_hash": "",
+                          "selected": false
+                      },
+                      {
+                          "linkage_photo_hash": "",
+                          "name": "无糖",
+                          "photo_hash": "",
+                          "selected": false
+                      }
+                  ],
+                  "linkage_status": 0,
+                  "name": "甜度"
+              }
+          ],
+          "ingredient_info": null,
+          "show_photo_type": 0,
+          "specifications2": [
+              {
+                  "details": [
+                      {
+                          "linkage_photo_hash": "",
+                          "name": "默认",
+                          "photo_hash": "",
+                          "selected": true
+                      },
+                      {
+                          "linkage_photo_hash": "",
+                          "name": "分装（加1元）",
+                          "photo_hash": "",
+                          "selected": false
+                      }
+                  ],
+                  "linkage_status": 0,
+                  "name": "规格"
+              }
+          ],
+          "sub_items": []
+      },
+      "category_id": 200000049421315446,
+      "description": "热饮容量500ml，奶盖易融，建议分装",
+      "image_path": "https://fuss10.elemecdn.com/ee0fe820636d0160f84bc5f7d914ae2cpng.png",
+      "is_essential": false,
+      "is_featured": 0,
+      "item_id": "200000298812505462",
+      "limitation": {},
+      "min_purchase": 1,
+      "month_sales": 4,
+      "name": "满满香芋（热）",
+      "photos": [
+          "ee0fe820636d0160f84bc5f7d914ae2cpng"
+      ],
+      "rating": 2.5,
+      "rating_count": 1,
+      "restaurant_id": 155170043,
+      "satisfy_count": 1,
+      "satisfy_rate": 100,
+      "scheme": "eleme://catering?target_food_id=1543798160&restaurant_id=E17026110126503561707&category_id=200000049421315446",
+      "specfoods": [
+          {
+              "checkout_mode": 1,
+              "food_id": 1543798160,
+              "is_essential": false,
+              "item_id": "200000298812505462",
+              "name": "满满香芋（热）",
+              "packing_fee": 0,
+              "pinyin_name": "manmanxiangyu（re）",
+              "price": 22,
+              "promotion_stock": -1,
+              "recent_popularity": 4,
+              "recent_rating": 5,
+              "restaurant_id": 155170043,
+              "sku_id": "200000352061317494",
+              "sold_out": false,
+              "specs": [
+                  {
+                      "name": "规格",
+                      "value": "默认"
+                  }
+              ],
+              "stock": 9985,
+              "virtual_food_id": 1491796250,
+              "weight": 0
+          },
+          {
+              "checkout_mode": 1,
+              "food_id": 1543798161,
+              "is_essential": false,
+              "item_id": "200000298812505462",
+              "name": "满满香芋（热）",
+              "packing_fee": 0,
+              "pinyin_name": "manmanxiangyu（re）",
+              "price": 23,
+              "promotion_stock": -1,
+              "recent_popularity": 0,
+              "recent_rating": 0,
+              "restaurant_id": 155170043,
+              "sku_id": "200000352052144502",
+              "sold_out": false,
+              "specs": [
+                  {
+                      "name": "规格",
+                      "value": "分装（加1元）"
+                  }
+              ],
+              "stock": 10000,
+              "virtual_food_id": 1491796250,
+              "weight": 0
+          }
+      ],
+      "specifications": [
+          {
+              "name": "规格",
+              "values": [
+                  "默认",
+                  "分装（加1元）"
+              ]
+          }
+      ],
+      "tips": "1评价 月售4份",
+      "tit":"月售4份",
+      "type": 0,
+      "virtual_food_id": 1491796250
+  },
+  {
+      "attributes": [],
+      "attrs": [
+          {
+              "name": "温度",
+              "values": [
+                  "标准冰",
+                  "去冰"
+              ]
+          }
+      ],
+      "brand": {
+          "attrs2": [
+              {
+                  "details": [
+                      {
+                          "linkage_photo_hash": "",
+                          "name": "标准冰",
+                          "photo_hash": "",
+                          "selected": true
+                      },
+                      {
+                          "linkage_photo_hash": "",
+                          "name": "去冰",
+                          "photo_hash": "",
+                          "selected": false
+                      }
+                  ],
+                  "linkage_status": 0,
+                  "name": "温度"
+              }
+          ],
+          "ingredient_info": null,
+          "show_photo_type": 0,
+          "specifications2": [
+              {
+                  "details": [
+                      {
+                          "linkage_photo_hash": "",
+                          "name": "默认",
+                          "photo_hash": "",
+                          "selected": true
+                      },
+                      {
+                          "linkage_photo_hash": "",
+                          "name": "分装（加1元）",
+                          "photo_hash": "",
+                          "selected": false
+                      }
+                  ],
+                  "linkage_status": 0,
+                  "name": "规格"
+              }
+          ],
+          "sub_items": []
+      },
+      "category_id": 40361885046,
+      "description": "草莓奶盖+草莓鲜果茶",
+      "image_path": "https://fuss10.elemecdn.com/23ea7d74dc69957c5994ff2a7d387b7fpng.png",
+      "is_essential": false,
+      "is_featured": 0,
+      "item_id": "326130266486",
+      "limitation": {},
+      "min_purchase": 1,
+      "month_sales": 136,
+      "name": "满满草莓",
+      "photos": [
+          "23ea7d74dc69957c5994ff2a7d387b7fpng"
+      ],
+      "rating": 4.225,
+      "rating_count": 19,
+      "restaurant_id": 155170043,
+      "satisfy_count": 19,
+      "satisfy_rate": 100,
+      "scheme": "eleme://catering?target_food_id=1400546239&restaurant_id=E17026110126503561707&category_id=40361885046",
+      "specfoods": [
+          {
+              "checkout_mode": 1,
+              "food_id": 1400546239,
+              "is_essential": false,
+              "item_id": "326130266486",
+              "name": "满满草莓",
+              "packing_fee": 0,
+              "pinyin_name": "manmancaomei",
+              "price": 26,
+              "promotion_stock": -1,
+              "recent_popularity": 110,
+              "recent_rating": 4.2,
+              "restaurant_id": 155170043,
+              "sku_id": "200000205359346038",
+              "sold_out": false,
+              "specs": [
+                  {
+                      "name": "规格",
+                      "value": "默认"
+                  }
+              ],
+              "stock": 9988,
+              "virtual_food_id": 722024026,
+              "weight": 0
+          },
+          {
+              "checkout_mode": 1,
+              "food_id": 976839794,
+              "is_essential": false,
+              "item_id": "326130266486",
+              "name": "满满草莓",
+              "packing_fee": 0,
+              "pinyin_name": "manmancaomei",
+              "price": 27,
+              "promotion_stock": -1,
+              "recent_popularity": 26,
+              "recent_rating": 4.25,
+              "restaurant_id": 155170043,
+              "sku_id": "600643181942",
+              "sold_out": false,
+              "specs": [
+                  {
+                      "name": "规格",
+                      "value": "分装（加1元）"
+                  }
+              ],
+              "stock": 9999,
+              "virtual_food_id": 722024026,
+              "weight": 0
+          }
+      ],
+      "specifications": [
+          {
+              "name": "规格",
+              "values": [
+                  "默认",
+                  "分装（加1元）"
+              ]
+          }
+      ],
+      "tips": "19评价 月售136份",
+      "tit":"月售136份",
+      "type": 0,
+      "virtual_food_id": 722024026
+  },
+  {
+      "attributes": [],
+      "attrs": [
+          {
+              "name": "甜度",
+              "values": [
+                  "标准糖",
+                  "少糖",
+                  "微糖",
+                  "无糖"
+              ]
+          },
+          {
+              "name": "温度",
+              "values": [
+                  "标准冰",
+                  "少冰",
+                  "去冰"
+              ]
+          }
+      ],
+      "brand": {
+          "attrs2": [
+              {
+                  "details": [
+                      {
+                          "linkage_photo_hash": "",
+                          "name": "标准糖",
+                          "photo_hash": "",
+                          "selected": true
+                      },
+                      {
+                          "linkage_photo_hash": "",
+                          "name": "少糖",
+                          "photo_hash": "",
+                          "selected": false
+                      },
+                      {
+                          "linkage_photo_hash": "",
+                          "name": "微糖",
+                          "photo_hash": "",
+                          "selected": false
+                      },
+                      {
+                          "linkage_photo_hash": "",
+                          "name": "无糖",
+                          "photo_hash": "",
+                          "selected": false
+                      }
+                  ],
+                  "linkage_status": 0,
+                  "name": "甜度"
+              },
+              {
+                  "details": [
+                      {
+                          "linkage_photo_hash": "",
+                          "name": "标准冰",
+                          "photo_hash": "",
+                          "selected": true
+                      },
+                      {
+                          "linkage_photo_hash": "",
+                          "name": "少冰",
+                          "photo_hash": "",
+                          "selected": false
+                      },
+                      {
+                          "linkage_photo_hash": "",
+                          "name": "去冰",
+                          "photo_hash": "",
+                          "selected": false
+                      }
+                  ],
+                  "linkage_status": 0,
+                  "name": "温度"
+              }
+          ],
+          "ingredient_info": null,
+          "show_photo_type": 0,
+          "specifications2": [
+              {
+                  "details": [
+                      {
+                          "linkage_photo_hash": "",
+                          "name": "默认",
+                          "photo_hash": "",
+                          "selected": true
+                      },
+                      {
+                          "linkage_photo_hash": "",
+                          "name": "分装（加1元）",
+                          "photo_hash": "",
+                          "selected": false
+                      }
+                  ],
+                  "linkage_status": 0,
+                  "name": "规格"
+              }
+          ],
+          "sub_items": []
+      },
+      "category_id": 28031811958,
+      "description": "香浓芝士+台湾阿里山乌龙",
+      "image_path": "https://fuss10.elemecdn.com/8995a99156ed3fdefe8dd8e0c763ba78png.png",
+      "is_essential": false,
+      "is_featured": 0,
+      "item_id": "200000298802516342",
+      "limitation": {},
+      "min_purchase": 1,
+      "month_sales": 1,
+      "name": "浓芝士金萱",
+      "photos": [
+          "8995a99156ed3fdefe8dd8e0c763ba78png"
+      ],
+      "rating": 2,
+      "rating_count": 1,
+      "restaurant_id": 155170043,
+      "satisfy_count": 1,
+      "satisfy_rate": 100,
+      "scheme": "eleme://catering?target_food_id=1543798231&restaurant_id=E17026110126503561707&category_id=28031811958",
+      "specfoods": [
+          {
+              "checkout_mode": 1,
+              "food_id": 1543798231,
+              "is_essential": false,
+              "item_id": "200000298802516342",
+              "name": "浓芝士金萱",
+              "packing_fee": 0,
+              "pinyin_name": "nongzhishijinxuan",
+              "price": 17,
+              "promotion_stock": -1,
+              "recent_popularity": 1,
+              "recent_rating": 4,
+              "restaurant_id": 155170043,
+              "sku_id": "200000352061382006",
+              "sold_out": false,
+              "specs": [
+                  {
+                      "name": "规格",
+                      "value": "默认"
+                  }
+              ],
+              "stock": 9999,
+              "virtual_food_id": 1491800080,
+              "weight": 0
+          },
+          {
+              "checkout_mode": 1,
+              "food_id": 1543805340,
+              "is_essential": false,
+              "item_id": "200000298802516342",
+              "name": "浓芝士金萱",
+              "packing_fee": 0,
+              "pinyin_name": "nongzhishijinxuan",
+              "price": 18,
+              "promotion_stock": -1,
+              "recent_popularity": 0,
+              "recent_rating": 0,
+              "restaurant_id": 155170043,
+              "sku_id": "200000352049862006",
+              "sold_out": false,
+              "specs": [
+                  {
+                      "name": "规格",
+                      "value": "分装（加1元）"
+                  }
+              ],
+              "stock": 10000,
+              "virtual_food_id": 1491800080,
+              "weight": 0
+          }
+      ],
+      "specifications": [
+          {
+              "name": "规格",
+              "values": [
+                  "默认",
+                  "分装（加1元）"
+              ]
+          }
+      ],
+      "tips": "1评价 月售1份",
+      "tit":"月售1份",
+      "type": 0,
+      "virtual_food_id": 1491800080
+  }
+],
+[
+    {
+        "name":"热销",
+        "food":[
+            {
+                "description": "草莓奶盖+草莓鲜果茶",
+                "image_path": "https://fuss10.elemecdn.com/29aafd1fecb122c7ab7888e9c6c811b6png.png",
+                "name": "满满草莓",
+                "price": 26,
+                "tips": "月售124份",
+                "virtual_food_id": 722024026
+            },
+            {
+                "description": "香浓芝士+茉莉绿芽清茶",
+                "image_path": "https://fuss10.elemecdn.com/29aafd1fecb122c7ab7888e9c6c811b6png.png",
+                "name": "浓芝士茉莉绿芽",
+                "price": 16,
+                "tips": "月售84份",
+                "virtual_food_id": 605143017
+            },
+            {
+                "description": "酷炫电光紫，夏日消暑必备",
+                "image_path": "https://fuss10.elemecdn.com/12e878127e924df1a563877e4e18a9a8png.png",
+                "name": "满满黑加仑",
+                "price": 25,
+                "tips": "月售82份",
+                "virtual_food_id": 822296406
+            },
+            {
+                "description": "香浓芝士+台湾日月潭红茶",
+                "image_path": "https://fuss10.elemecdn.com/12e878127e924df1a563877e4e18a9a8png.png",
+                "name": "浓芝士日月潭红茶",
+                "price": 16,
+                "tips": "月售55份",
+                "virtual_food_id": 605136985
+            },
+            {
+                "description": "香浓芝士+云南宫廷普洱",
+                "image_path": "https://fuss10.elemecdn.com/12e878127e924df1a563877e4e18a9a8png.png",
+                "name": "浓芝士宫廷普洱",
+                "price": 18,
+                "tips": "月售34份",
+                "virtual_food_id": 605142217
+            }
+        ]
+    },
+    {
+        "name":"优惠",
+        "food":[
+            {
+                "description": "香芋奶盖+奶茶+芋泥+芋圆小丸子，香芋三连击 默认",
+                "image_path": "https://fuss10.elemecdn.com/ee0fe820636d0160f84bc5f7d914ae2cpng.png",
+                "name": "满满香芋",
+                "price": 11,
+                "tips": "月售25份",
+                "virtual_food_id": 1491793459
+            }
+        ]
+    },
+    {
+        "name":"鲜果芝士奶盖",
+        "food":[
+            {
+                "description": "酷炫电光紫，夏日消暑必备",
+                "image_path": "https://fuss10.elemecdn.com/12e878127e924df1a563877e4e18a9a8png.png",
+                "name": "满满黑加仑",
+                "price": 25,
+                "tips": "月售82份",
+                "virtual_food_id": 822296406
+            },
+            {
+                "description": "草莓奶盖+草莓鲜果茶",
+                "image_path": "https://fuss10.elemecdn.com/29aafd1fecb122c7ab7888e9c6c811b6png.png",
+                "name": "满满草莓",
+                "price": 26,
+                "tips": "月售124份",
+                "virtual_food_id": 722024026
+            },
+            {
+                "description": "芒果奶盖+芒果鲜果茶",
+                "image_path": "https://fuss10.elemecdn.com/29aafd1fecb122c7ab7888e9c6c811b6png.png",
+                "name": "满满芒果茶",
+                "price": 25,
+                "tips": "月售38份",
+                "virtual_food_id": 605140804
+            },
+            {
+                "description": "D24榴莲奶盖+茉莉绿芽清茶",
+                "image_path": "https://fuss10.elemecdn.com/5cc433844c1fc702abfd615e06992c43png.png",
+                "name": "榴莲奶盖茉莉绿芽",
+                "price": 25,
+                "tips": "月售25份",
+                "virtual_food_id": 605139793
+            }
+        ]
+    },
+    {
+        "name":"香芋奶盖",
+        "food":[
+            {
+                "description": "香芋奶盖+奶茶+芋泥+芋圆小丸子，香芋三连击 默认",
+                "image_path": "https://fuss10.elemecdn.com/ee0fe820636d0160f84bc5f7d914ae2cpng.png",
+                "name": "满满香芋",
+                "price": 23,
+                "tips": "月售25份",
+                "virtual_food_id": 1491793459
+            },
+            {
+                "description": "香芋奶盖+奶茶+芋泥+芋圆小丸子，香芋三连击",
+                "image_path": "https://fuss10.elemecdn.com/ee0fe820636d0160f84bc5f7d914ae2cpng.png",
+                "name": "满满香芋",
+                "price": 11,
+                "tips": "月售0份",
+                "virtual_food_id": 1491793459
+            },
+            {
+                "description": "香芋奶盖+台湾阿里山乌龙",
+                "image_path": "https://fuss10.elemecdn.com/512a52c0a83c9b84b878ece37d034d0epng.png",
+                "name": "香芋奶盖金萱",
+                "price": 19,
+                "tips": "月售1份",
+                "virtual_food_id": 1491796277
+            },
+            {
+                "description": "香芋奶盖+天然蜜香小蝉乌龙",
+                "image_path": "https://fuss10.elemecdn.com/512a52c0a83c9b84b878ece37d034d0epng.png",
+                "name": "香芋奶盖小蝉",
+                "price": 20,
+                "tips": "月售0份",
+                "virtual_food_id": 1491804415
+            }
+        ]
+    },
+    {
+        "name":"浓芝士奶盖",
+        "food":[
+            {
+                "description": "香浓芝士+台湾日月潭红茶",
+                "image_path": "https://fuss10.elemecdn.com/ee0fe820636d0160f84bc5f7d914ae2cpng.png",
+                "name": "浓芝士日月潭红茶",
+                "price": 16,
+                "tips": "月售55份",
+                "virtual_food_id": 605136985
+            },
+            {
+                "description": "香浓芝士+茉莉绿芽清茶",
+                "image_path": "https://fuss10.elemecdn.com/ee0fe820636d0160f84bc5f7d914ae2cpng.png",
+                "name": "浓芝士茉莉绿芽",
+                "price": 16,
+                "tips": "月售84份",
+                "virtual_food_id": 605143017
+            },
+            {
+                "description": "香浓芝士+台湾阿里山乌龙",
+                "image_path": "https://fuss10.elemecdn.com/ee0fe820636d0160f84bc5f7d914ae2cpng.png",
+                "name": "浓芝士阿里山乌龙",
+                "price": 17,
+                "tips": "月售22份",
+                "virtual_food_id": 605141331
+            },
+            {
+                "description": "香浓芝士+天然蜜香",
+                "image_path": "https://fuss10.elemecdn.com/1b4ab76eee8a1cedcba7f59a4cc94532png.png",
+                "name": "浓芝士小蝉乌龙",
+                "price": 18,
+                "tips": "月售32份",
+                "virtual_food_id": 605143018
+            },
+            {
+                "description": "香浓芝士+云南宫廷普洱",
+                "image_path": "https://fuss10.elemecdn.com/ee0fe820636d0160f84bc5f7d914ae2cpng.png",
+                "price": 18,
+                "name": "浓芝士宫廷普洱",
+                "tips": "月售34份",
+                "virtual_food_id": 605142217
+            }
+        ]
+    },
+    {
+        "name":"奥利奥奶盖",
+        "food":[
+            {
+                "description": "奥利奥搭配香浓芝士+台湾日月潭红茶",
+                "image_path": "https://fuss10.elemecdn.com/23ea7d74dc69957c5994ff2a7d387b7fpng.png",
+                "name": "奥利奥日月潭红茶",
+                "price": 18,
+                "tips": "月售13份",
+                "virtual_food_id": 918210750
+            },
+            {
+                "description": "奥利奥搭配香浓芝士+台湾阿里山乌龙",
+                "image_path": "https://fuss10.elemecdn.com/23ea7d74dc69957c5994ff2a7d387b7fpng.png",
+                "name": "奥利奥阿里山乌龙",
+                "price": 19,
+                "tips": "月售1份",
+                "virtual_food_id": 918201461
+            }
+        ]
+    },
+    {
+        "name":"鲜果茶",
+        "food":[
+            {
+                "description": "奇异果鲜果茶+爽口椰果",
+                "image_path": "https://fuss10.elemecdn.com/b99e5f5c81c8db04c2f2f2c03d862e35png.png",
+                "name": "满满奇异果",
+                "price": 25,
+                "tips": "月售60份",
+                "virtual_food_id": 864212135
+            },
+            {
+                "description": "酸酸甜甜，西柚清香",
+                "image_path": "https://fuss10.elemecdn.com/2ded67d2510b1232997fa0a911b5cb20png.png",
+                "name": "满满西柚",
+                "price": 20,
+                "tips": "月售0份",
+                "virtual_food_id": 922634189
+            },
+            {
+                "description": "片片橙子，满满维C",
+                "image_path": "https://fuss10.elemecdn.com/4556a048f9a7151bba4a08be97cea870png.png",
+                "name": "满满橙子",
+                "price": 25,
+                "tips": "月售7份",
+                "virtual_food_id": 605138866
+            },
+            {
+                "description": "微酸，清爽解腻",
+                "image_path": "https://fuss10.elemecdn.com/490f0208db66bb99923ad61161299611png.png",
+                "name": "满满柠檬",
+                "price": 15,
+                "tips": "月售0份",
+                "virtual_food_id": 922648577
+            },
+            {
+                "description": "酸甜百香果+益力多",
+                "image_path": "https://fuss10.elemecdn.com/0ca5406b78a012f819b8a4b474ae1e90png.png",
+                "name": "百香果多多",
+                "price": 18,
+                "tips": "月售37份",
+                "virtual_food_id": 605142228
+            },
+            {
+                "description": "1000cc超大容量超多水果",
+                "image_path": "https://fuss10.elemecdn.com/36e23eb0e98a5d196d5a0de577b1c800png.png",
+                "name": "缤纷水果茶",
+                "price": 25,
+                "tips": "月售0份",
+                "virtual_food_id": 922634190
+            }
+        ]
+    },
+    {
+        "name":"混混熊",
+        "food":[
+            {
+                "description": "抹茶鲜牛乳，默认含红豆一份",
+                "image_path": "https://fuss10.elemecdn.com/158e0ed924af810f9935829965c5f315png.png",
+                "name": "抹茶混混熊",
+                "price": 25,
+                "tips": "月售26份",
+                "virtual_food_id": 887843845
+            },
+            {
+                "description": "经典奶茶，默认含金珠珠一份",
+                "image_path": "https://fuss10.elemecdn.com/27a6eb65cfcf5df8aba00e24756e43eapng.png",
+                "name": "奶茶混混熊",
+                "price": 15,
+                "tips": "月售153份",
+                "virtual_food_id": 887861466
+            },
+            {
+                "description": "鲜牛乳，默认含黑糖珍珠一份",
+                "image_path": "https://fuss10.elemecdn.com/fb101d208eb02684cb261b1cf606834epng.png",
+                "price": 18,
+                "name": "黑糖混混熊",
+                "tips": "月售62份",
+                "virtual_food_id": 880008623
+            }
+        ]
+    },
+    {
+        "name": "暖心热饮",
+        "food":[
+            {
+                "description": "热饮容量500ml，奶盖易融，建议分装",
+                "image_path": "https://fuss10.elemecdn.com/23ea7d74dc69957c5994ff2a7d387b7fpng.png",
+                "name": "满满草莓 (热)",
+                "tips": "月售3份",
+                "price":26,
+                "virtual_food_id": 1491793431
+            },
+            {
+                "description": "热饮容量500ml，奶盖易融，建议分装",
+                "image_path": "https://fuss10.elemecdn.com/a2d6a5fdf85a5ed00ea0b9e06ec38492png.png",
+                "name": "榴莲奶盖绿芽 (热)",
+                "tips": "月售0份",
+                "price":25,
+                "virtual_food_id": 1491796249
+            },
+            {
+                "description": "热饮容量500ml，奶盖易融，建议分装",
+                "image_path": "https://fuss10.elemecdn.com/ee0fe820636d0160f84bc5f7d914ae2cpng.png",
+                "name":"满满香芋（热）",
+                "tips": "月售4份",
+                "price":22,
+                "virtual_food_id": 1491796250
+            },
+            {
+                "description": "热饮容量500ml，奶盖易融，建议分装",
+                "image_path": "https://fuss10.elemecdn.com/512a52c0a83c9b84b878ece37d034d0epng.png",
+                "name":"香芋奶盖金萱（热）",
+                "tips": "月售0份",
+                "price":19,
+                "virtual_food_id": 1491804383
+            },
+            {
+                "description": "热饮容量500ml，奶盖易融，建议分装",
+                "image_path": "https://fuss10.elemecdn.com/512a52c0a83c9b84b878ece37d034d0epng.png",
+                "name":"香芋奶盖小蝉（热)",
+                "tips": "月售0份",
+                "price":20,
+                "virtual_food_id": 1491804385
+            },
+            {
+                "description": "热饮容量500ml，奶盖易融，建议分装",
+                "image_path": "https://fuss10.elemecdn.com/c08c3feedfbbd8ec2e48bbaaecd52f9dpng.png",
+                "name":"浓芝士红玉（热）",
+                "tips": "月售0份",
+                "price":16,
+                "virtual_food_id": 1491796255
+            },
+            {
+                "description": "热饮容量500ml，奶盖易融，建议分装",
+                "image_path": "https://fuss10.elemecdn.com/a59c1951fb63737c260bf5bb6dcf3d71png.png",
+                "name":"浓芝士绿芽（热）",
+                "tips": "月售0份",
+                "price":16,
+                "virtual_food_id": 1491804389
+            },
+            {
+                "description": "热饮容量500ml，奶盖易融，建议分装",
+                "image_path": "https://fuss10.elemecdn.com/8995a99156ed3fdefe8dd8e0c763ba78png.png",
+                "name":"浓芝士金萱（热）",
+                "tips": "月售0份",
+                "price":17,
+                "virtual_food_id": 1491800060
+            },
+            {
+                "description": "热饮容量500ml，奶盖易融，建议分装",
+                "image_path": "https://fuss10.elemecdn.com/8995a99156ed3fdefe8dd8e0c763ba78png.png",
+                "name":"浓芝士小蝉（热）",
+                "tips": "月售0份",
+                "price":18,
+                "virtual_food_id": 1491804392
+            }
+        ]
+    },
+    {
+        "name":"加料",
+        "food":[
+            {
+
+                "description": "分装－奶盖分装加1元",
+                "image_path": "https://fuss10.elemecdn.com/d6e611cfc88e456d5829e89cb6b70075png.png",
+                "name": "浓芝士奶盖",
+                "price": 6,
+                "tips": "月售0份",
+                "virtual_food_id": 922639255
+            },
+            {
+                "description": "分装－奶盖分装加1元",
+                "image_path": "https://fuss10.elemecdn.com/deef999d1da10fbcfd50b3b6dd4e2e1apng.png",
+                "name": "芒果奶盖",
+                "price": 11,
+                "tips": "月售0份",
+                "virtual_food_id": 922634192
+            },
+            {
+
+                "description": "分装－奶盖分装加1元",
+                "image_path": "https://fuss10.elemecdn.com/8120096a0203e8acf1625c04dbcb456bpng.png",
+                "name": "草莓奶盖",
+                "price": 11,
+                "tips": "月售0份",
+                "virtual_food_id": 922617701
+            },
+            {
+                "description": "分装－奶盖分装加1元",
+                "image_path": "https://fuss10.elemecdn.com/cfc8ab9977e56fca4f123e66ad5e9cc9png.png",
+                "name": "黑加仑奶盖",
+                "price": 11,
+                "tips": "月售0份",
+                "virtual_food_id": 922617703
+            },
+            {
+
+                "description": "分装－奶盖分装加1元",
+                "image_path": "https://fuss10.elemecdn.com/da6591d7528d4aaa667f6607d616397epng.png",
+                "price": 16,
+                "name": "榴莲奶盖",
+                "tips": "月售0份",
+                "virtual_food_id": 922639259
+            },
+            {
+
+                "description": "软糯Q弹，吃得到芋头颗粒",
+                "image_path": "https://fuss10.elemecdn.com/7adf474a07ead14f461c4cce7dc9c682png.png",
+                "name": "芋圆小丸子",
+                "price": 2,
+                "tips": "月售0份",
+                "virtual_food_id": 922634194
+            },
+            {
+
+                "description": "方形椰果，更有嚼劲",
+                "image_path": "https://fuss10.elemecdn.com/7adf474a07ead14f461c4cce7dc9c682png.png",
+                "name": "椰果",
+                "price": 2,
+                "tips": "月售0份",
+                "virtual_food_id": 922621449
+            },
+            {
+                "description": "分装－奥利奥约7g，分装加1元",
+                "image_path": "https://fuss10.elemecdn.com/7adf474a07ead14f461c4cce7dc9c682png.png",
+                "name": "奥利奥",
+                "price": 3,
+                "tips": "月售0份",
+                "virtual_food_id": 922629576
+            },
+            {
+                "description": "Q弹有嚼劲",
+                "image_path": "https://fuss10.elemecdn.com/7adf474a07ead14f461c4cce7dc9c682png.png",
+                "name": "金珠珠",
+                "price": 2,
+                "tips": "月售0份",
+                "virtual_food_id": 922634196
+            },
+            {
+                "description": "香甜软糯",
+                "image_path": "https://fuss10.elemecdn.com/7adf474a07ead14f461c4cce7dc9c682png.png",
+                "name": "红豆",
+                "price": 2,
+                "tips": "月售0份",
+                "virtual_food_id": 922639261
+            }
+        ]
+    }
+]
+]

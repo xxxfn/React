@@ -16,6 +16,7 @@ import My from './pages/My/My';
 import Register from './User/Register/Register';
 import Login from './User/Login/Login';
 
+import Details from './pages/Details/Details'
 const App = () => {
   return (
     <Provider store={store}>
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/my" component={My}/>
           <Route path="/register" component={Register}/>
           <Route path="/login" component={Login}/>
+          <Route path="/details/:id/:offset" component={Details} />
         </Fragment>
       </Router>
     </Provider>
