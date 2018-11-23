@@ -15,18 +15,6 @@ class Order extends Component{
       data:index
     })
   }
-  scoll(e){
-    // console.log( e.target.scrollTop);
-    // console.log(document.querySelector(`#title${1}`).offsetTop-480);
-    for(var i=0;i<this.props.morelist.length;i++){
-      // console.log(document.querySelector(`#title${i}`).offsetTop-480);
-      if(document.querySelector(`#title${i}`).offsetTop-480 <= e.target.scrollTop+10 && document.querySelector(`#title${i}`).offsetTop-480 >= e.target.scrollTop-10){
-        this.setState({
-          data:i
-        })
-      }
-    }
-  }
   render(){
     return(
       <Fragment>
@@ -64,7 +52,7 @@ class Order extends Component{
             })
           }
          </ul>
-          <div className="munu" onScroll={this.scoll.bind(this)}>
+          <div className="munu">
               {
                 this.props.morelist.map((fitem,ind)=>{
                   return(
