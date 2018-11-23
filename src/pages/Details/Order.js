@@ -15,14 +15,18 @@ class Order extends Component{
       data:index
     })
   }
-
-  scroll(e){
-    console.log("在混动")
-    var btop = this.refs.munu.getBoundingClientRect()
-    var stop = this.refs.div1.getBoundingClientRect()
-    console.log("父级距离顶部",stop.top,"儿子距离顶部", btop.top)
+  scoll(e){
+    // console.log( e.target.scrollTop);
+    // console.log(document.querySelector(`#title${1}`).offsetTop-480);
+    for(var i=0;i<this.props.morelist.length;i++){
+      // console.log(document.querySelector(`#title${i}`).offsetTop-480);
+      if(document.querySelector(`#title${i}`).offsetTop-480 <= e.target.scrollTop+10 && document.querySelector(`#title${i}`).offsetTop-480 >= e.target.scrollTop-10){
+        this.setState({
+          data:i
+        })
+      }
+    }
   }
-
   render(){
     return(
       <Fragment>
@@ -60,7 +64,7 @@ class Order extends Component{
             })
           }
          </ul>
-          <div ref="munu" className="munu" onScroll={this.scroll.bind(this)}>
+          <div className="munu" onScroll={this.scoll.bind(this)}>
               {
                 this.props.morelist.map((fitem,ind)=>{
                   return(
