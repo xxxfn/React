@@ -15,6 +15,14 @@ class Order extends Component{
       data:index
     })
   }
+
+  scroll(e){
+    console.log("在混动")
+    var btop = this.refs.munu.getBoundingClientRect()
+    var stop = this.refs.div1.getBoundingClientRect()
+    console.log("父级距离顶部",stop.top,"儿子距离顶部", btop.top)
+  }
+
   render(){
     return(
       <Fragment>
@@ -52,16 +60,16 @@ class Order extends Component{
             })
           }
          </ul>
-          <div className="munu">
+          <div ref="munu" className="munu" onScroll={this.scroll.bind(this)}>
               {
                 this.props.morelist.map((fitem,ind)=>{
                   return(
-                    <Fragment key={ind}>
-                      <div id={`title${ind}`} className="nametit">{fitem.name}</div>
+                    <Fragment key={ind} >
+                      <div ref={`div${ind}`} id={`title${ind}`} className="nametit" >{fitem.name}</div>
                       {
                         fitem.food.map((fit,findx)=>{
                           return(
-                            <ul key={findx}>
+                            <ul>
                               <li className="liname" onClick={()=>{this.props.bigx({"img":fit.image_path,"name":fit.name,"tit":fit.tips,"price":fit.price})}} >
                                 <span className="ph">
                                   <img src={fit.image_path} alt="1"/>
