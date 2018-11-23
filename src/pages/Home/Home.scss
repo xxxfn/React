@@ -44,7 +44,7 @@
       }
     }
     .cfj-banner{
-      margin-top: 20px;
+      margin-top: 25px;
       .am-wingblank.am-wingblank-lg{
         margin: 7px;
       }
@@ -127,6 +127,14 @@
                   .ppp{
                     padding: 0 5px;
                   }
+                  div{
+                    float: right;
+                    margin-right: 15px;
+                    padding: 2px;
+                    border-radius: 2px;
+                    color: #ffffff;
+                    text-align: center;
+                  }
                 }
                 .shopprice{
                   font-size: 10px;
@@ -183,4 +191,7 @@
 .am-grid.am-grid-square .am-grid-item .am-grid-item-inner-content .am-grid-icon {
     margin-top: 9px;
     width: 65%!important;
+}
+.slider-decorator-0{
+  bottom: -10px !important;
 }

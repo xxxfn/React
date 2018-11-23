@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import HomeUI from './HomeUI';
 import React,{Component} from 'react';
 import axios from 'axios'
-import { Result } from 'antd-mobile';
+// import { Result } from 'antd-mobile';
 
 const proxy = "https://bird.ioliu.cn/v1/?url=";
 class Home extends Component {

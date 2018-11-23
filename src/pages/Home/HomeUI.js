@@ -76,7 +76,7 @@ const HomeUI = (props) => {
             <div className="cfj-recommend-tit">推荐商家</div>
             <Sticky>
               {({ style }) => (
-                <ul style={{ ...style, top: 150, zIndex: 99, height: 40, top: 40,display:"flex",textAlign:"center",justifyContent:"space-around",lineHeight:"40px",background:"#FFF",borderBottom:"1px solid #ddd" }}>
+                <ul style={{ ...style, zIndex: 99, height: 40, top: 40,display:"flex",textAlign:"center",justifyContent:"space-around",lineHeight:"40px",background:"#FFF",borderBottom:"1px solid #ddd" }}>
                   <li>综合排序</li>
                   <li>距离最近</li>
                   <li>品质联盟</li>
@@ -90,8 +90,8 @@ const HomeUI = (props) => {
               <ul>
                 {props.restaurant.map((item,index) =>(
                   // <NavLink to={`/details/${item.restaurant.id}/0`}>
-                  <NavLink to={{ pathname: `/details/${item.restaurant.id}/0`, search: `?lat=${props.position.location && props.position.location.lat}&lng=${props.position.location && props.position.location.lng}`}}>
-                    <li key={index}>
+                  <NavLink key={index} to={{ pathname: `/details/${item.restaurant.id}/0`, search: `?lat=${props.position.location && props.position.location.lat}&lng=${props.position.location && props.position.location.lng}`}}>
+                    <li>
                       <div className="shopinfo">
                         <div className="shopimg">
                           <img src={`https://fuss10.elemecdn.com/${item.restaurant.image_path}.${/jpeg/.test(item.restaurant.image_path) === true ? 'jpeg' : 'png'}`} alt="" />
@@ -99,10 +99,10 @@ const HomeUI = (props) => {
                         <div className="shopbody">
                           <h3 className="shopname">{item.restaurant.name}</h3>
                           <div className="shopnum">
-                            <span style={{"width":item.restaurant.rating*12}}><svg width="60" height="10" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="0%" y1="50%" y2="50%" id="a"><stop stop-color="#FFDE00" offset="0%" /><stop stop-color="#FFB000" offset="100%" /></linearGradient></defs><path d="M54.017 8.072l-2.552 1.561c-.476.291-.758.096-.626-.455l.696-2.909-2.273-1.944c-.424-.362-.325-.691.239-.736l2.982-.237L53.63.589c.213-.515.557-.523.774 0l1.146 2.763 2.982.237c.556.044.67.368.24.736l-2.274 1.944.696 2.91c.13.542-.143.75-.626.454l-2.551-1.56zm-48 0L3.465 9.633c-.476.291-.758.096-.626-.455l.696-2.909-2.273-1.944c-.424-.362-.325-.691.239-.736l2.982-.237L5.63.589c.213-.515.557-.523.774 0L7.55 3.352l2.982.237c.556.044.67.368.24.736L8.497 6.269l.696 2.91c.13.542-.143.75-.626.454l-2.551-1.56zm12 0l-2.552 1.561c-.476.291-.758.096-.626-.455l.696-2.909-2.273-1.944c-.424-.362-.325-.691.239-.736l2.982-.237L17.63.589c.213-.515.557-.523.774 0l1.146 2.763 2.982.237c.556.044.67.368.24.736l-2.274 1.944.696 2.91c.13.542-.143.75-.626.454l-2.551-1.56zm12 0l-2.552 1.561c-.476.291-.758.096-.626-.455l.696-2.909-2.273-1.944c-.424-.362-.325-.691.239-.736l2.982-.237L29.63.589c.213-.515.557-.523.774 0l1.146 2.763 2.982.237c.556.044.67.368.24.736l-2.274 1.944.696 2.91c.13.542-.143.75-.626.454l-2.551-1.56zm12 0l-2.552 1.561c-.476.291-.758.096-.626-.455l.696-2.909-2.273-1.944c-.424-.362-.325-.691.239-.736l2.982-.237L41.63.589c.213-.515.557-.523.774 0l1.146 2.763 2.982.237c.556.044.67.368.24.736l-2.274 1.944.696 2.91c.13.542-.143.75-.626.454l-2.551-1.56z" fill="url(#a)" fill-rule="evenodd" /></svg></span>
+                            <span style={{"width":item.restaurant.rating*12}}><svg width="60" height="10" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="0%" y1="50%" y2="50%" id="a"><stop stopColor="#FFDE00" offset="0%" /><stop stopColor="#FFB000" offset="100%" /></linearGradient></defs><path d="M54.017 8.072l-2.552 1.561c-.476.291-.758.096-.626-.455l.696-2.909-2.273-1.944c-.424-.362-.325-.691.239-.736l2.982-.237L53.63.589c.213-.515.557-.523.774 0l1.146 2.763 2.982.237c.556.044.67.368.24.736l-2.274 1.944.696 2.91c.13.542-.143.75-.626.454l-2.551-1.56zm-48 0L3.465 9.633c-.476.291-.758.096-.626-.455l.696-2.909-2.273-1.944c-.424-.362-.325-.691.239-.736l2.982-.237L5.63.589c.213-.515.557-.523.774 0L7.55 3.352l2.982.237c.556.044.67.368.24.736L8.497 6.269l.696 2.91c.13.542-.143.75-.626.454l-2.551-1.56zm12 0l-2.552 1.561c-.476.291-.758.096-.626-.455l.696-2.909-2.273-1.944c-.424-.362-.325-.691.239-.736l2.982-.237L17.63.589c.213-.515.557-.523.774 0l1.146 2.763 2.982.237c.556.044.67.368.24.736l-2.274 1.944.696 2.91c.13.542-.143.75-.626.454l-2.551-1.56zm12 0l-2.552 1.561c-.476.291-.758.096-.626-.455l.696-2.909-2.273-1.944c-.424-.362-.325-.691.239-.736l2.982-.237L29.63.589c.213-.515.557-.523.774 0l1.146 2.763 2.982.237c.556.044.67.368.24.736l-2.274 1.944.696 2.91c.13.542-.143.75-.626.454l-2.551-1.56zm12 0l-2.552 1.561c-.476.291-.758.096-.626-.455l.696-2.909-2.273-1.944c-.424-.362-.325-.691.239-.736l2.982-.237L41.63.589c.213-.515.557-.523.774 0l1.146 2.763 2.982.237c.556.044.67.368.24.736l-2.274 1.944.696 2.91c.13.542-.143.75-.626.454l-2.551-1.56z" fill="url(#a)" fillRule="evenodd" /></svg></span>
                             <span className="ppp">{item.restaurant.rating}</span>
                             <span>月售{item.restaurant.recent_order_num}单</span>
-                            <div style={{ "float": "right", "background": `#${item.restaurant.delivery_mode && item.restaurant.delivery_mode.gradient.rgb_to}`,"color":"#fff","marginRight":"15px","padding":"1px"}}>{item.restaurant.delivery_mode && item.restaurant.delivery_mode.text}</div>
+                            <div style={{ "background": `#${item.restaurant.delivery_mode && item.restaurant.delivery_mode.gradient.rgb_to}`}}>{item.restaurant.delivery_mode && item.restaurant.delivery_mode.text}</div>
                           </div>
                           <div className="shopprice">
                             <div>￥{item.restaurant.piecewise_agent_fee.rules[0].price}起送|{item.restaurant.piecewise_agent_fee.tips}</div>
