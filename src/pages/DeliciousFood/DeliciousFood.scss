@@ -1,3 +1,6 @@
+.DeliciousFood{
+  height: 100%;
+}
 .zhezhaoceng{
   width: 100%;
   height: 100%;
@@ -22,7 +25,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #F9F9F9;
+  background: #ffffff;
   padding: 0 10px 0 10px;
 }
 .Allfood{
@@ -53,9 +56,11 @@ button{
   border: 0;
   background: none;
 }
-
+.Foodmain{
+  height: 100%;
+}
 .flexParent{
-  height: 90px;
+  height: 100px;
   .Flex{
     position: fixed;
     top: 0;
@@ -63,6 +68,11 @@ button{
 }
 
 // 美食主页面
+.Scroll{
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 20px;
+}
 .FoodHeight{
   display: flex;
   height: 50px;
@@ -86,7 +96,7 @@ button{
   background: #0085ff;
   display: flex;
   align-items: center;
-  padding: 0 10px;
+  padding: 5px 10px;
   button{
     width: 35px;
     height: 40px;
@@ -95,33 +105,48 @@ button{
     font-size: 14px;
     color: #F9F9F9;
   }
+  div::-webkit-scrollbar{
+    // 清楚滚动条
+    display: none;
+  }
   div{
     height: 40px;
-    line-height: 40px;
+    line-height: 37px;
     width: 100%;
     overflow: auto;
     .foodactUl{
       width: 300%;
+      overflow: hidden;
       li{
         color: rgb(228, 224, 224);
         float: left;
         padding: 0 5px;
         font-size: 12px;
       }
+      .libottom{
+        border-bottom:2px solid #F9F9F9;
+      }
     }
   }
+
 }
 .dianjia{
   display: flex;
-  border-bottom: 1px solid #0085ff;
+  width: 100%;
+  // border-bottom: 1px solid #0085ff;
   margin-bottom: 5px ;
-  padding-top: 5px;
+  padding: 5px 10px;
+  background: #ffffff;
 }
 .dianjiaLeft{
-  width: 50px;
+  width: 80px;
+  img{
+    width: 70%;
+  }
 }
 .dianjiaRight{
-  font-size: 10px;
+  flex: 1;
+  font-size: 11px;
   color: #7a7474;
   .icon-wujiaoxing{
     color: rgb(221, 221, 72);
@@ -132,8 +157,11 @@ button{
     justify-content: space-between;
     margin-bottom: 5px;
     h2{
-      font-size: 12px;
+      font-size: 14px;
       color: #000000;
+    }
+    div{
+      text-align: right;
     }
   }
   .Rightwo{
@@ -141,7 +169,7 @@ button{
     display: flex;
     justify-content: space-between;
     i{
-      font-size: 10px;
+      font-size: 12px;
     }
     p{
       padding: 1px;
@@ -167,6 +195,7 @@ button{
       background: rgb(223, 148, 121);
       padding: 1px;
       color: #F9F9F9;
+      margin-right: 3px;
     }
   }
 }

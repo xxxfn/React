@@ -14,8 +14,7 @@ let AllReducers = combineReducers({
   Category: CategoryReducer,
   Order: OrderReducer,
   DeliciousFood: DeliciousFood,
-  My: MyReducer,
-  Order: OrderReducer
+  My: MyReducer
 })
 
 export default AllReducers;

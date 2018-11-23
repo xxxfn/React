@@ -24,7 +24,9 @@ const OrderUI = (props) => {
               return(
                 <div className="Ordermains" key={index}>
                   <div className="MainTop">
-                    <img src={props.imagb + item.img + `${/jpeg/.test(item.img) === true ? 'jpeg' : 'png'}`+ props.image} style={{ width: '30px' }} alt="" />
+                    <div className="MainTopLeft">
+                      <img src={props.imagb + item.img + `${/jpeg/.test(item.img) === true ? 'jpeg' : 'png'}`+ props.image} alt="" />
+                    </div>
                     <div className="maintoptop">
                       <div className="maintoptopome">
                         <div>
@@ -40,7 +42,9 @@ const OrderUI = (props) => {
                     </div>
                   </div>
                   <div className="Mainbottom">
-                    <button>再来一单</button>
+                    <NavLink to="/DeliciousFood">
+                      <button>再来一单</button>
+                    </NavLink>
                   </div>
                 </div>
               )
