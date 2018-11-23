@@ -1,5 +1,13 @@
 #all{
  position: relative;
+ .gobanck{
+   position:absolute;
+   top: 10px;
+   left: 10px;
+   color: #fff;
+   font-size: 26px;
+   font-weight: 800;
+ }
  .show{
    position: fixed;
    background: white;

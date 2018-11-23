@@ -37,10 +37,13 @@ class Details extends Component{
       show:"none"
     })
   }
+  back(){
+    this.props.history.goBack();
+  }
   render(){
     return(
       <DetailsUI data={this.state.data} imgs={this.state.imgs} list={this.state.list}
-      morelist={this.state.morelist } change={this.change.bind(this)} nav={this.state.nav} bigx={this.bigx.bind(this)} bigxdata={this.state.bigxdata} kaig={this.state.kaig} hid={this.hid.bind(this)} show={this.state.show}
+      morelist={this.state.morelist } change={this.change.bind(this)} nav={this.state.nav} bigx={this.bigx.bind(this)} bigxdata={this.state.bigxdata} kaig={this.state.kaig} hid={this.hid.bind(this)} show={this.state.show} back={this.back.bind(this)}
       ></DetailsUI>
     )
   }
