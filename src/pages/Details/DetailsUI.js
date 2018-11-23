@@ -91,6 +91,7 @@ const HomeUI = (props) => {
           </div>
       </div>
       </CSSTransition>
+      <div className="gobanck" onClick={props.back}><i className="iconfont icon-iconfontfanhui1"></i></div>
     </div>
     )
 }
