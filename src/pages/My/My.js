@@ -18,7 +18,7 @@ class My extends Component{
   }
   render(){
     return(
-      <MyUI imgs1={this.state.imgs1} imgs2={this.state.imgs2} imgs3={this.state.imgs3} imgs4={this.state.imgs4} head={this.state.head} headp={this.state.headp} remove={this.state.remove} onclick={this.onclick.bind(this)}></MyUI>
+      <MyUI imgs1={this.state.imgs1} imgs2={this.state.imgs2} imgs3={this.state.imgs3} imgs4={this.state.imgs4} head={this.state.head} headp={this.state.headp} remove={this.state.remove} onclick={this.onclick.bind(this)} back={this.back.bind(this)}></MyUI>
     )
   }
   componentDidMount(){
@@ -47,6 +47,9 @@ class My extends Component{
         remove:''
       })
     }
+  }
+  back(){
+    this.props.history.goBack();
   }
   onclick(){
       console.log(1)

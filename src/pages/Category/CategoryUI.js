@@ -9,7 +9,7 @@ const CategoryUI = (props) => {
     <div className="category">
       <div className="elm-home">
         <div className="zxs-head">
-            <img src={props.imgs1} alt='' className="zxs-headerimg"/>
+            <img src={props.imgs1} alt='' className="zxs-headerimg" onClick={props.goback}/>
             发现
         </div>
         <div className="zxs-cap">

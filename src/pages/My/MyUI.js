@@ -10,7 +10,7 @@ const MyUI = (props) => {
       <div className="my">
        <div className="elm-home">
           <div className="zxs-head">
-           <img src={props.imgs1} alt='' className="zxs-headerimg"/>
+           <img src={props.imgs1} alt='' className="zxs-headerimg" onClick={props.back}/>
            我的
           </div>
           <div className="zxs-profile">
