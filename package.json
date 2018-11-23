@@ -4,12 +4,17 @@
   "private": true,
   "dependencies": {
     "antd-mobile": "^2.2.6",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
     "node-sass": "^4.10.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-redux": "^5.1.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1",
+    "react-sticky": "^6.0.3",
     "react-transition-group": "^2.5.0",
     "redux": "^4.0.1",
     "styled-components": "^4.1.1"

@@ -8,25 +8,25 @@ class Footer extends Component {
       <ul className="elm-foot">
         <li>
           <NavLink to="/" exact>
-            <i className="iconfont icon-ditu"></i>
+            <i className="iconfont icon-elmyhq"></i>
             <span>首页</span>
           </NavLink>
         </li>
         <li>
           <NavLink to="/category">
-            <i className="iconfont icon-anquan"></i>
+            <i className="iconfont icon-faxian"></i>
             <span>发现</span>
           </NavLink>
         </li>
         <li>
           <NavLink to="/order">
-            <i className="iconfont icon-zhaoxiang"></i>
+            <i className="iconfont icon-icon--copy"></i>
             <span>订单</span>
           </NavLink>
         </li>
         <li>
-          <NavLink to="/user">
-            <i className="iconfont icon-Dyanjing"></i>
+          <NavLink to="/my">
+            <i className="iconfont icon-home"></i>
             <span>我的</span>
           </NavLink>
         </li>
