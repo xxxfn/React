@@ -1,7 +1,54 @@
-// #all{
-//   display: flex;
-//   flex-direction: column;
-// }
+#all{
+ position: relative;
+ .show{
+   position: absolute;
+   background: red;
+  //  height:100%;
+   width: 100%;
+   z-index: 999;
+   top: 0;
+ }
+ .cuo{
+   display: block;
+   position:absolute;
+   top: 10px;
+   right: 10px;
+   display: none;
+   z-index: 1000;
+ }
+ .showcuo{
+   display: block;
+ }
+// 入场
+ .ho-enter {
+  height: 0;
+}
+
+.ho-enter-active {
+  height: 100%;
+  transition: all 1s;
+}
+
+.ho-enter-done {
+  height: 100%;
+}
+
+/*
+  出场
+*/
+.ho-exit {
+  height: 100%;
+}
+
+.ho-exit-active {
+  height: 0;
+  transition: all 1s;
+}
+
+.ho-exit-done {
+  height: 0;
+}
+}
 .app-dps8r{
   position:relative;
   color: #333;

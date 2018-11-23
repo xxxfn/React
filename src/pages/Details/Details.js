@@ -12,19 +12,32 @@ class Details extends Component{
       imgs:'',
       list:[],
       morelist:[],
-      nav:1
+      nav:1,
+      bigxdata:{},
+      kaig:false,
     }
   }
   change(index){
-    console.log(index);
     this.setState({
       nav:index
+    })
+  }
+  bigx(list){
+    this.setState({
+      bigxdata:list,
+      kaig:true
+    })
+    console.log(this.state.bigxdata)
+  }
+  hid(){
+    this.setState({
+      kaig:false
     })
   }
   render(){
     return(
       <DetailsUI data={this.state.data} imgs={this.state.imgs} list={this.state.list}
-      morelist={this.state.morelist } change={this.change.bind(this)} nav={this.state.nav}
+      morelist={this.state.morelist } change={this.change.bind(this)} nav={this.state.nav} bigx={this.bigx.bind(this)} bigxdata={this.state.bigxdata} kaig={this.state.kaig} hid={this.hid.bind(this)}
       ></DetailsUI>
     )
   }
@@ -38,7 +51,6 @@ class Details extends Component{
        console.log(res);
        if(res.has_next){
          for(var i=0;i<res.items.length;i++){
-           console.log(res.items[i].restaurant.id)
            if(res.items[i].restaurant.id===id){
              var url=res.items[i].restaurant.image_path;
              var reg=/png$/;

@@ -4,6 +4,7 @@ import { Icon} from 'antd-mobile';
 import Order from './Order.js';
 import Evaluate from './Evaluate.js';
 import Business from './Business.js';
+import {CSSTransition} from 'react-transition-group';
 const HomeUI = (props) => {
   return (
     <div id="all">
@@ -57,7 +58,7 @@ const HomeUI = (props) => {
           </ul>
         </div>
         <div style={{backgroundColor: '#fff' }} className={props.nav===1?"zact":"hid"}>
-        <Order list={props.list} morelist={props.morelist} food={props.food}></Order>
+        <Order list={props.list} morelist={props.morelist} food={props.food} bigx={props.bigx}></Order>
         </div>
         <div style={{backgroundColor: '#fff' }} className={props.nav===2?"zact":"hid"}>
         <Evaluate list={props.list}></Evaluate>
@@ -66,6 +67,16 @@ const HomeUI = (props) => {
         <Business list={props.list}></Business>
         </div>
       </div>
+      <CSSTransition
+        in={props.kaig}
+        timeout={1000}
+        classNames="ho"
+        // unmountOnExit
+      >
+      <div className="show">
+      </div>
+      </CSSTransition>
+      <span className={props.kaig?"cuo showcuo":"cuo"} onClick={props.hid}><Icon type="cross-circle"/></span>
     </div>
     )
 }
