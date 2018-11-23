@@ -15,13 +15,6 @@ class Order extends Component{
       data:index
     })
   }
-  // bigx(list){
-  //   // console.log(list);
-  //   var dataxi={...list};
-  //   this.setState({
-  //     dataxi:{...dataxi}
-  //   })
-  // }
   render(){
     return(
       <Fragment>
@@ -69,7 +62,7 @@ class Order extends Component{
                         fitem.food.map((fit,findx)=>{
                           return(
                             <ul key={findx}>
-                              <li className="liname">
+                              <li className="liname" onClick={()=>{this.props.bigx({"img":fit.image_path,"name":fit.name,"tit":fit.tips,"price":fit.price})}} >
                                 <span className="ph">
                                   <img src={fit.image_path} alt="1"/>
                                 </span>
