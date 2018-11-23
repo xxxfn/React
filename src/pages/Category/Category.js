@@ -18,7 +18,7 @@ class Category extends Component{
   }
   render(){
     return(
-      <CategoryUI imgs1={this.state.imgs1} imgs2={this.state.imgs2} imgs3={this.state.imgs3} imgs4={this.state.imgs4} imgs5={this.state.imgs5} list={this.state.list}></CategoryUI>
+      <CategoryUI goback={this.goback.bind(this)} imgs1={this.state.imgs1} imgs2={this.state.imgs2} imgs3={this.state.imgs3} imgs4={this.state.imgs4} imgs5={this.state.imgs5} list={this.state.list}></CategoryUI>
     )
   }
   componentDidMount(){
@@ -38,6 +38,9 @@ class Category extends Component{
       console.log(1)
       console.log(this.state.list)
     })
+  }
+  goback(){
+    this.props.history.goBack();
   }
 }
 const mapStateToProps = ({ Category }) => {
