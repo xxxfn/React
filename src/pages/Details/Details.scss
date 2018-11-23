@@ -1,7 +1,92 @@
-// #all{
-//   display: flex;
-//   flex-direction: column;
-// }
+#all{
+ position: relative;
+ .show{
+   position: fixed;
+   background: white;
+   height:100%;
+   width: 100%;
+   z-index: 3;
+   top: 0;
+   .ph{
+     width: 100%;
+   }
+   .cainame{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 16px;
+    margin-left: 16px;
+    p{
+      font-size:18px;
+      widows: 140px;;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+   }
+   .haoname{
+    font-size:12px;
+    color: #666;
+    line-height: 1;
+    margin: 10px;
+    margin-bottom: 12px;
+    span{
+      margin-right: 10px;
+    }
+   }
+   .per{
+     font-size: 22px;
+     color: red;
+     margin-left: 10px;
+     margin-top: 15px;
+   }
+   .word{
+      margin-top: 20px;
+      font-size: 12px;
+      margin-left: 10px;
+      line-height: 20px;
+   }
+ }
+.cuo{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 104;
+  display: none
+}
+.showcuo{
+  display: block;
+}
+// 入场
+.ho-enter {
+  transform: translateY(100%)
+ }
+
+ .ho-enter-active {
+  transform: translateY(0);
+  transition: all 1s;
+ }
+
+ .ho-enter-done {
+  transform: translateY(0);
+ }
+
+ /*
+  出场
+ */
+ .ho-exit {
+  transform: translateY(0);
+ }
+
+ .ho-exit-active {
+  transform: translateY(100%);
+  transition: all 1s;
+ }
+
+ .ho-exit-done {
+  transform: translateY(100%);
+ }
+}
 .app-dps8r{
   position:relative;
   color: #333;
@@ -95,7 +180,7 @@
 .heade{
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 2;
   .navil{
     display: flex;
     background: #fff;

@@ -4,6 +4,7 @@ import { Icon} from 'antd-mobile';
 import Order from './Order.js';
 import Evaluate from './Evaluate.js';
 import Business from './Business.js';
+import {CSSTransition} from 'react-transition-group';
 const HomeUI = (props) => {
   return (
     <div id="all">
@@ -57,7 +58,7 @@ const HomeUI = (props) => {
           </ul>
         </div>
         <div style={{backgroundColor: '#fff' }} className={props.nav===1?"zact":"hid"}>
-        <Order list={props.list} morelist={props.morelist} food={props.food}></Order>
+        <Order list={props.list} morelist={props.morelist} food={props.food} bigx={props.bigx}></Order>
         </div>
         <div style={{backgroundColor: '#fff' }} className={props.nav===2?"zact":"hid"}>
         <Evaluate list={props.list}></Evaluate>
@@ -66,6 +67,30 @@ const HomeUI = (props) => {
         <Business list={props.list}></Business>
         </div>
       </div>
+      <CSSTransition
+        in={props.kaig}
+        timeout={1000}
+        classNames="ho"
+        unmountOnExit
+      >
+      <div className="show" >
+          <span className={props.kaig?"cuo showcuo":"cuo"} onClick={props.hid}><Icon type="cross-circle"/></span>
+          <img src={props.bigxdata.img} alt="1" className="ph"/>
+          <div className="cainame">
+            <p>{props.bigxdata.name}</p>
+          </div>
+          <div className="haoname">
+            <span>{props.bigxdata.tit}</span>
+            <span>好评60%</span>
+          </div>
+          <div className="per">
+            <span>￥{props.bigxdata.price}</span>
+          </div>
+          <div className="word">
+            <span>生活中的你我，匆匆忙碌，面对着喜乐悲欢，别无选择。 对于他来说，妻子的那一场病，如同重击，击...</span>
+          </div>
+      </div>
+      </CSSTransition>
     </div>
     )
 }

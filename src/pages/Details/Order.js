@@ -5,7 +5,7 @@ class Order extends Component{
   constructor(props){
     super(props)
     this.state={
-      data:0
+      data:0,
     }
   }
   tiao(index){
@@ -24,7 +24,7 @@ class Order extends Component{
           {
             this.props.list.map((item,index)=>{
               return(
-                <div key={index} className="lire">
+                <div key={index} className="lire" onClick={()=>{this.props.bigx({"img":item.image_path,"name":item.name,"tit":item.tit,"price":item.specfoods[0].price})}}>
                   <img src={item.image_path} alt=""/>
                   <p className="nameli">{item.name}</p>
                   <p className="nies">
@@ -62,7 +62,7 @@ class Order extends Component{
                         fitem.food.map((fit,findx)=>{
                           return(
                             <ul key={findx}>
-                              <li className="liname">
+                              <li className="liname" onClick={()=>{this.props.bigx({"img":fit.image_path,"name":fit.name,"tit":fit.tips,"price":fit.price})}} >
                                 <span className="ph">
                                   <img src={fit.image_path} alt="1"/>
                                 </span>
@@ -95,6 +95,7 @@ class Order extends Component{
             <span>¥10起送</span>
           </div>
         </div>
+        {/* <div className="show"></div> */}
       </Fragment>
     )
   }
