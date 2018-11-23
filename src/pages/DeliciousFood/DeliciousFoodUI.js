@@ -10,7 +10,7 @@ const DeliciousFoodUI = (props) => {
   }
 
   return (
-    <div>
+    <div className="DeliciousFood">
       <div style={btnStyle1} className="zhezhaoceng"></div>
       <div style={btnStyle1} className="Foodlist">
         <div className="foodheader">
@@ -59,46 +59,50 @@ const DeliciousFoodUI = (props) => {
       <div className="Foodmain">
 
         <div className="flexParent">
-        <div className="Flex">
-          <div className="FoodHeight">
-            <NavLink to="/">
-              <button className="iconfont icon-iconfontfanhui1" />
-            </NavLink>
-            <span> 美食</span>
-          </div>
-          <div className="foodact">
-            <div >
-              <ul className="foodactUl">
-                {
-                  props.foodlist.map((item, index) => {
-                    return (
-                      <li key={index}>
-                        <NavLink
-                          to="/DeliciousFood" exact
-                          exact={true}
-                          strict={true}
-                          activeStyle={{color:'#ffffff',borderBottom:'#ffffff'}}
-                        >
-                          <span>{item.name}</span>
-                        </NavLink>
-                      </li>
-                    )
-                  })
-                }
-              </ul>
+          <div className="Flex">
+            <div className="FoodHeight">
+              <NavLink to="/">
+                <button className="iconfont icon-iconfontfanhui1" />
+              </NavLink>
+              <span> 美食</span>
             </div>
-            <button className="iconfont icon-xiangxia2" onClick={props.switchBorder1} ></button>
+            <div className="foodact">
+              <div >
+                <ul className="foodactUl">
+                  {
+                    props.foodlist.map((item, index) => {
+                      return (
+                        <li
+                        key={index}
+                        onClick={()=>{
+                          props.changelibottom(index)
+                        }}
+                        className={props.Liindex === index ? "libottom" : ''}
+                        >
+                          <NavLink
+                            to="/DeliciousFood"
+                            activeStyle={{color:'#ffffff',borderBottom:'#ffffff'}}
+                          >
+                            <span>{item.name}</span>
+                          </NavLink>
+                        </li>
+                      )
+                    })
+                  }
+                </ul>
+              </div>
+              <button className="iconfont icon-xiangxia2" onClick={props.switchBorder1} ></button>
+            </div>
           </div>
-        </div>
         </div>
 
-        <div>
+        <div className="Scroll" onScroll={props.handleScroll}>
           {
             props.foodmain.map((item,index)=>{
               return(
                 <div className="dianjia" key={index}>
                   <div className="dianjiaLeft">
-                    <img src={props.imagb + item.restaurant.image_path + `${/jpeg/.test(item.restaurant.image_path) === true ? '.jpeg' : '.png'}` + props.image} style={{ width: '30px' }} alt="" />
+                    <img src={props.imagb + item.restaurant.image_path + `${/jpeg/.test(item.restaurant.image_path) === true ? '.jpeg' : '.png'}` + props.image} alt="" />
                   </div>
 
                   <div className="dianjiaRight">
@@ -106,7 +110,7 @@ const DeliciousFoodUI = (props) => {
                       <h2>{item.restaurant.name}</h2>
                       <div>
                         <span className="iconfont icon-shouji"></span>
-                        <i className="iconfont icon-ellipsis"></i>
+                        <i className="iconfont icon-ellipsis1"></i>
                       </div>
                     </div>
 

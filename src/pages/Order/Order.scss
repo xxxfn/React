@@ -31,9 +31,11 @@
   .MainTop{
     display: flex;
     width: 100%;
-    img{
-      height: 30px;
-      width: auto;
+    .MainTopLeft{
+      width: 70px;
+      img{
+        width: 100%;
+      }
     }
     .maintoptop{
       flex: 1;
