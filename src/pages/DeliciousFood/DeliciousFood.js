@@ -2,9 +2,11 @@ import { connect } from 'react-redux';
 import DeliciousFoodUI from './DeliciousFoodUI';
 import React, { Component } from 'react'
 import axios from 'axios'
+// import foodmain from './restaurants'
 
-
+import { Toast } from 'antd-mobile';
 class DeliciousFood extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -12,7 +14,7 @@ class DeliciousFood extends Component {
       Alllist: [],
       foodlist: [],
       tab: [],
-      foodmain:[],
+      foodmain: [],
       Liindex: 0,
       border1: false,
       imagb: 'https://fuss10.elemecdn.com/',
@@ -50,6 +52,9 @@ class DeliciousFood extends Component {
     let scrollHeight = e.target.scrollHeight; //滚动内容高度
     if((clientHeight+scrollTop) >= (scrollHeight-1)){ //如果滚动到底部
       console.log('数据即将刷新')
+      Toast.loading('Loading...',2, () => {
+        console.log('Load complete !!!');
+      });
       setTimeout(() => {
         let Tab = this.state.foodmain
         this.state.foodmain.map((item, index) => {
@@ -61,26 +66,7 @@ class DeliciousFood extends Component {
         this.setState({
           foodmain: Tab
         })
-      }, 3000);
-
-      //  var api = "https://bird.ioliu.cn/v1?url="
-      // axios.get(api + 'https://h5.ele.me/restapi/shopping/v3/restaurants?latitude=22.621544&longitude=113.839746&keyword=&offset=0&limit=8&extras[]=activities&extras[]=tags&terminal=h5&rank_id=42f1109daa344653b4ce41ce1006831d&brand_ids[]=&restaurant_category_ids[]=209&restaurant_category_ids[]=212&restaurant_category_ids[]=213&restaurant_category_ids[]=214&restaurant_category_ids[]=215&restaurant_category_ids[]=216&restaurant_category_ids[]=217&restaurant_category_ids[]=219&restaurant_category_ids[]=265&restaurant_category_ids[]=266&restaurant_category_ids[]=267&restaurant_category_ids[]=268&restaurant_category_ids[]=269&restaurant_category_ids[]=221&restaurant_category_ids[]=222&restaurant_category_ids[]=223&restaurant_category_ids[]=224&restaurant_category_ids[]=225&restaurant_category_ids[]=226&restaurant_category_ids[]=227&restaurant_category_ids[]=228&restaurant_category_ids[]=231&restaurant_category_ids[]=232&restaurant_category_ids[]=263&restaurant_category_ids[]=218&restaurant_category_ids[]=234&restaurant_category_ids[]=235&restaurant_category_ids[]=236&restaurant_category_ids[]=237&restaurant_category_ids[]=238&restaurant_category_ids[]=211&restaurant_category_ids[]=229&restaurant_category_ids[]=230&restaurant_category_ids[]=264')
-      //   .then((response) => {
-      //     var foodmain = response.data.items
-      //     let Tab = this.state.foodmain
-      //     foodmain.map((item, index) => {
-      //       Tab.push(item)
-      //       return (
-      //         console.log('期望的函数')
-      //       )
-      //     })
-      //     this.setState({
-      //       foodmain: Tab
-      //     })
-      //   })
-      //   .catch(function (error) {
-      //     console.log(error, '有错');
-      //   });
+      }, 2000);
     }
   }
 
@@ -89,8 +75,12 @@ class DeliciousFood extends Component {
   }
 
   componentDidMount() {
+    // 开始刷新
+    Toast.loading('Loading...', 0, () => {
+      console.log('Load complete !!!');
+    });
     var api = "https://bird.ioliu.cn/v1?url="
-    axios.get(api + 'https://h5.ele.me/restapi/shopping/v2/restaurant/category?latitude=22.621544&longitude=113.839746')
+    axios.get(api + 'https://www.ele.me/restapi/shopping/v2/restaurant/category?latitude=22.533719&longitude=113.936091')
       .then((response) => {
         var foodlist = response.data.slice(1)
         var newfoodlist = foodlist[`${this.state.a}`].sub_categories
@@ -115,11 +105,13 @@ class DeliciousFood extends Component {
         console.log(error, '有错');
       });
 
-    axios.get(api + 'https://h5.ele.me/restapi/shopping/v3/restaurants?latitude=22.621544&longitude=113.839746&keyword=&offset=0&limit=8&extras[]=activities&extras[]=tags&terminal=h5&rank_id=42f1109daa344653b4ce41ce1006831d&brand_ids[]=&restaurant_category_ids[]=209&restaurant_category_ids[]=212&restaurant_category_ids[]=213&restaurant_category_ids[]=214&restaurant_category_ids[]=215&restaurant_category_ids[]=216&restaurant_category_ids[]=217&restaurant_category_ids[]=219&restaurant_category_ids[]=265&restaurant_category_ids[]=266&restaurant_category_ids[]=267&restaurant_category_ids[]=268&restaurant_category_ids[]=269&restaurant_category_ids[]=221&restaurant_category_ids[]=222&restaurant_category_ids[]=223&restaurant_category_ids[]=224&restaurant_category_ids[]=225&restaurant_category_ids[]=226&restaurant_category_ids[]=227&restaurant_category_ids[]=228&restaurant_category_ids[]=231&restaurant_category_ids[]=232&restaurant_category_ids[]=263&restaurant_category_ids[]=218&restaurant_category_ids[]=234&restaurant_category_ids[]=235&restaurant_category_ids[]=236&restaurant_category_ids[]=237&restaurant_category_ids[]=238&restaurant_category_ids[]=211&restaurant_category_ids[]=229&restaurant_category_ids[]=230&restaurant_category_ids[]=264')
+    axios.get(api + 'https://www.ele.me/restapi/shopping/restaurants?extras%5B%5D=activities&geohash=ws100wjsrmej&latitude=22.533719&limit=24&longitude=113.936091&offset=0&restaurant_category_ids%5B%5D=-100&sign=1543024570502&terminal=web')
       .then((response) => {
         this.setState({
           foodmain:response.data.items
         })
+        // 结束刷新
+        Toast.hide();
       })
       .catch(function (error) {
         console.log(error, '有错');

@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import HomeUI from './HomeUI';
 import React,{Component} from 'react';
 import axios from 'axios'
-// import { Result } from 'antd-mobile';
+import { Toast } from 'antd-mobile';
 
 const proxy = "https://bird.ioliu.cn/v1/?url=";
 class Home extends Component {
@@ -28,26 +28,10 @@ class Home extends Component {
     return (<HomeUI {...this.state} cfjclick={this.cfjclick.bind(this)} />)
   }
   componentDidMount() {
-    // axios.get('https://bird.ioliu.cn/ip')
-    //   .then(result => {
-    //     var lat = result.data.data.location.lat;
-    //     var lng = result.data.data.location.lng;
-
-    //   })
-
-    // axios.get('https://bird.ioliu.cn/ip')
-    //   .then(result => {
-    //     var lat = result.data.data.location.lat;
-    //     var lng = result.data.data.location.lng;
-
-    //   })
-
-      //https://h5.ele.me/restapi/shopping/v3/restaurants?latitude=22.533719&longitude=113.936091&offset=0&limit=8&extras[]=activities&extras[]=tags&extra_filters=home&rank_id=&terminal=h5
-    // axios.get('https://bird.ioliu.cn/ip')
-    //   .then(result =>{
-
-    //   })
-    //https://bird.ioliu.cn/v2/?url=https://apis.map.qq.com/ws/location/v1/ip?ip=113.92.93.53&key=TKUBZ-D24AF-GJ4JY-JDVM2-IBYKK-KEBCU
+    // 开始刷新
+    Toast.loading('Loading...', 0, () => {
+      console.log('Load complete !!!');
+    });
     axios.get('https://bird.ioliu.cn/ip')
       .then(result => {
         var ip = result.data.data.ip
@@ -79,6 +63,8 @@ class Home extends Component {
               this.setState({
                 entries: result.data[0].entries
               })
+              // 结束刷新
+              Toast.hide();
             })
 
         })
