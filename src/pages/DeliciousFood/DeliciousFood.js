@@ -108,8 +108,9 @@ class DeliciousFood extends Component {
     axios.get(api + 'https://www.ele.me/restapi/shopping/restaurants?extras%5B%5D=activities&geohash=ws100wjsrmej&latitude=22.533719&limit=24&longitude=113.936091&offset=0&restaurant_category_ids%5B%5D=-100&sign=1543024570502&terminal=web')
       .then((response) => {
         this.setState({
-          foodmain:response.data.items
+          foodmain:response.data
         })
+        console.log(response)
         // 结束刷新
         Toast.hide();
       })

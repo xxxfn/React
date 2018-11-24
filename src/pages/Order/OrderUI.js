@@ -6,6 +6,7 @@ import { Order,Elmorder } from './style.js';
 import { NavLink } from 'react-router-dom';
 
 const OrderUI = (props) => {
+  console.log(props);
   return (
     <Order>
       <Elmorder>
