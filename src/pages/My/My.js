@@ -15,29 +15,36 @@ class My extends Component{
       headp:'登录注册后享受更多特权',
       remove:''
     }
+    this.getCookie=this.getCookie.bind(this);
+  }
+  getCookie (key) {
+    var cookieStr = document.cookie
+    var arr = cookieStr.split('; ')
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i].split('=')[0] === key) {
+        return arr[i].split('=')[1]
+      }
+    }
+    return ''
   }
   render(){
     return(
-      <MyUI imgs1={this.state.imgs1} imgs2={this.state.imgs2} imgs3={this.state.imgs3} imgs4={this.state.imgs4} head={this.state.head} headp={this.state.headp} remove={this.state.remove} onclick={this.onclick.bind(this)} back={this.back.bind(this)}></MyUI>
+      <MyUI registers={this.registers.bind(this)} imgs1={this.state.imgs1} imgs2={this.state.imgs2} imgs3={this.state.imgs3} imgs4={this.state.imgs4} head={this.state.head} headp={this.state.headp} remove={this.state.remove} onclick={this.onclick.bind(this)} back={this.back.bind(this)}></MyUI>
     )
   }
-  componentDidMount(){
 
-    function getCookie (key) {
-      var cookieStr = document.cookie
-      var arr = cookieStr.split('; ')
-      for (var i = 0; i < arr.length; i++) {
-        if (arr[i].split('=')[0] === key) {
-          return arr[i].split('=')[1]
-        }
-      }
-      return ''
+  registers(){
+    if(this.getCookie('username')){
+      this.props.history.push('/my');
+    }else{
+      this.props.history.push('/register');
     }
-    // var username=getCookie('username');
-    if(getCookie('username')){
+  }
+  componentDidMount(){
+    if(this.getCookie('username')){
       this.setState({
-        head:`尊敬的用户${getCookie('username')}`,
-        headp:`ID:${getCookie('id')}`,
+        head:`尊敬的用户${this.getCookie('username')}`,
+        headp:`ID:${this.getCookie('id')}`,
         remove:'退出登录'
       })
     }else{
@@ -55,22 +62,13 @@ class My extends Component{
       console.log(1)
       document.cookie = 'username=; expires=' + new Date(0);
       document.cookie = 'id=; expires=' + new Date(0);
-      function getCookie (key) {
-        var cookieStr = document.cookie
-        var arr = cookieStr.split('; ')
-        for (var i = 0; i < arr.length; i++) {
-          if (arr[i].split('=')[0] === key) {
-            return arr[i].split('=')[1]
-          }
-        }
-        return ''
-      }
-      if(getCookie('username')){
+      if(this.getCookie('username')){
         this.setState({
-          head:`尊敬的用户${getCookie('username')}`,
-          headp:`ID:${getCookie('id')}`,
+          head:`尊敬的用户${this.getCookie('username')}`,
+          headp:`ID:${this.getCookie('id')}`,
           remove:'退出登录'
         })
+        this.props.history.push('/my');
       }else{
         this.setState({
           head:'登录/注册',
@@ -85,11 +83,14 @@ class My extends Component{
 
 const mapStateToProps = ({ My }) => {
   return {
+
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
-  return {}
+  return {
+
+  }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(My);

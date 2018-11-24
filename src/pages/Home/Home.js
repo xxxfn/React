@@ -12,12 +12,20 @@ class Home extends Component {
       entries:[],
       banner:[],
       restaurant:[],
-      position:{}
+      position:{},
+      flag:false
     }
   }
-
+  cfjclick(){
+    var a = this.state.flag
+    var b = !a;
+    this.setState=({
+      flag:b
+    })
+    console.log(b)
+  }
   render() {
-    return (<HomeUI {...this.state} />)
+    return (<HomeUI {...this.state} cfjclick={this.cfjclick.bind(this)} />)
   }
   componentDidMount() {
     // axios.get('https://bird.ioliu.cn/ip')
@@ -50,23 +58,24 @@ class Home extends Component {
           })
           var lat = result.data.result.location.lat;
           var lng = result.data.result.location.lng;
-          axios.get(proxy + `https://h5.ele.me/restapi/shopping/v3/restaurants?latitude=${lat}&longitude=${lng}&offset=0&limit=8&extras[]=activities&extras[]=tags&extra_filters=home&rank_id=&terminal=h5`)
+          axios.get(proxy + `https://www.ele.me/restapi/shopping/restaurants?extras%5B%5D=activities&geohash=ws100wjsrmej&latitude=${lat}&limit=8&longitude=${lng}&offset=0&terminal=web`)
             .then(result => {
-              // console.log(result)
+              console.log(result)
+              console.log('aaa')
               this.setState({
-                restaurant: result.data.items
+                restaurant: result.data
               })
             })
           axios.get(proxy + `https://h5.ele.me/restapi/shopping/v2/banners?consumer=1&type=1&latitude=${lat}&longitude=${lng}`)
             .then(result => {
-              // console.log(result)
+              console.log(result)
               this.setState({
                 banner: result.data
               })
             })
           axios.get(proxy + `https://h5.ele.me/restapi/shopping/v2/entries?latitude=${lat}&longitude=${lng}&templates[]=main_template&templates[]=favourable_template&templates[]=svip_template&terminal=h5`)
             .then(result => {
-              // console.log(result)
+              console.log(result)
               this.setState({
                 entries: result.data[0].entries
               })

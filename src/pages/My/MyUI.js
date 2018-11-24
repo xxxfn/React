@@ -16,7 +16,7 @@ const MyUI = (props) => {
           <div className="zxs-profile">
            <img src={props.imgs2} alt="" className="zxs-tou"/>
            <div className="zxs-p">
-             <NavLink to="/register" className="zxs-register">{props.head}</NavLink>
+             <p className="zxs-register" onClick={props.registers}>{props.head}</p>
              <p className="register-p1">{props.headp}</p>
              <p className="register-p2" onClick={props.onclick}>{props.remove}</p>
              <img src={props.imgs3} alt='' className="zxs-img3" />

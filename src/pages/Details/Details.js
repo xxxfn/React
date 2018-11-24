@@ -54,14 +54,15 @@ class Details extends Component{
     var src=this.props.location.search;
     var latitude=src.split("?")[1].split("&")[0].split("=")[1];
     var longitude=src.split("?")[1].split("&")[1].split("=")[1];
-    axios.get(this.state.api+`https://h5.ele.me/restapi/shopping/v3/restaurants?latitude=${latitude}&longitude=${longitude}&offset=${offset}&limit=8&extras[]=activities&extras[]=tags&extra_filters=home&rank_id=&terminal=h5`).then(result=>{
+    axios.get(this.state.api+`https://www.ele.me/restapi/shopping/restaurants?extras%5B%5D=activities&geohash=ws100wjsrmej&latitude=${latitude}&limit=8&longitude=${longitude}&offset=${offset}&terminal=web`).then(result=>{
        var res=result.data;
        console.log(id);
        console.log(res);
-       if(res.has_next){
-         for(var i=0;i<res.items.length;i++){
-           if(res.items[i].restaurant.id===id){
-             var url=res.items[i].restaurant.image_path;
+
+       if(result.statusText==="OK"){
+         for(var i=0;i<res.length;i++){
+           if(res[i].id===id){
+             var url=res[i].image_path;
              var reg=/png$/;
              console.log(reg.test(url));
              var src=""
@@ -72,8 +73,9 @@ class Details extends Component{
              }
              _this.setState({
               imgs:src,
-              data:res.items[i]
+              data:res[i]
              })
+             console.log(this.state.data)
            }
          }
        }
