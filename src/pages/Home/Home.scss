@@ -7,6 +7,44 @@
   .elm-home {
     flex: 1;
     background: #ffffff;
+    .cfj-choose{
+      position: absolute;
+      width: 375px;
+      height: 100%;
+      z-index: 999;
+      background: yellow;
+      .cfj-address-choose{
+        height: 44px;
+        line-height: 44px;
+        width: 375px;
+        background: #0085ff;
+        span{
+          position: absolute;
+          left: 0;
+          background: red;
+        }
+        h3{
+          text-align: center;
+        }
+      }
+      .cfj-choose-citylist{
+        // width: 375px;
+        display: flex;
+        height: 45px;
+        // line-height: 45px;
+        .choose{
+          display: block;
+          line-height: 45px;
+          height: 45px;
+          // flex: 2;
+        }
+        .cfj-seach-city{
+          // flex: 7
+          width: 300px;
+        }
+      }
+
+    }
     .cfj-header{
       padding: 10px;
       background: #0085ff;
@@ -195,3 +233,32 @@
 .slider-decorator-0{
   bottom: -10px !important;
 }
+// 入场
+.ho-enter {
+  transform: translateX(100%)
+ }
+
+ .ho-enter-active {
+  transform: translateX(0);
+  transition: all 1s;
+ }
+
+ .ho-enter-done {
+  transform: translateX(0);
+ }
+
+ /*
+  出场
+ */
+ .ho-exit {
+  transform: translateX(0);
+ }
+
+ .ho-exit-active {
+  transform: translateX(100%);
+  transition: all 1s;
+ }
+
+ .ho-exit-done {
+  transform: translateX(100%);
+ }
