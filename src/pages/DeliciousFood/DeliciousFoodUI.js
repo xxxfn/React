@@ -102,12 +102,12 @@ const DeliciousFoodUI = (props) => {
               return(
                 <div className="dianjia" key={index}>
                   <div className="dianjiaLeft">
-                    <img src={props.imagb + item.restaurant.image_path + `${/jpeg/.test(item.restaurant.image_path) === true ? '.jpeg' : '.png'}` + props.image} alt="" />
+                    <img src={props.imagb + item.image_path + `${/jpeg/.test(item.image_path) === true ? '.jpeg' : '.png'}` + props.image} alt="" />
                   </div>
 
                   <div className="dianjiaRight">
                     <div className="Rightone">
-                      <h2>{item.restaurant.name}</h2>
+                      <h2>{item.name}</h2>
                       <div>
                         <span className="iconfont icon-shouji"></span>
                         <i className="iconfont icon-ellipsis1"></i>
@@ -121,13 +121,13 @@ const DeliciousFoodUI = (props) => {
                         <i className="iconfont icon-wujiaoxing" ></i>
                         <i className="iconfont icon-wujiaoxing" ></i>
                         <i className="iconfont icon-wujiaoxing" ></i>
-                        <span>{item.restaurant.rating} 月售932单</span>
+                        <span>{item.rating} 月售932单</span>
                       </div>
                       <p>蜂鸟专送</p>
                     </div>
 
                     <div className="Righthree">
-                      <p>￥{item.restaurant.float_minimum_order_amount}起送|远距离配送费￥{item.restaurant.float_delivery_fee}</p>
+                      <p>￥{item.float_minimum_order_amount}起送|远距离配送费￥{item.float_delivery_fee}</p>
                       <p>2.32Km|31分钟</p>
                     </div>
 
