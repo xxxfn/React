@@ -16,29 +16,29 @@ const HomeUI = (props) => {
             <img src={props.imgs} alt=""/>
           </div>
           <div className="title">
-            <h2 className="tith">{props.data.restaurant && props.data.restaurant.name}</h2>
+            <h2 className="tith">{props.data && props.data.name}</h2>
             <div className="titb">
-              <span>评价：{props.data.restaurant && props.data.restaurant.rating}</span>
-              <span>月销售：{props.data.restaurant && props.data.restaurant.recent_order_num}
+              <span>评价：{props.data && props.data.rating}</span>
+              <span>月销售：{props.data && props.data.recent_order_num}
               单</span>
-              <span>蜂鸟快送约{props.data.restaurant && props.data.restaurant.order_lead_time}分</span>
+              <span>蜂鸟快送约{props.data && props.data.order_lead_time}分</span>
             </div>
             <div className="you">
               <span className="smil"
-              style={{backgroundColor:`#${props.data.restaurant&&props.data.restaurant.activities[0].icon_color}`}}>
-                {(props.data.restaurant && props.data.restaurant.activities[0].icon_name==="首")?"首单":"满减"}
+              style={{backgroundColor:`#${props.data &&props.data.activities&&props.data.activities[0].icon_color}`}}>
+                {(props.data &&props.data.activities && props.data.activities[0].icon_name==="首")?"首单":"满减"}
               </span>
               <span className="jian">
-                {props.data.restaurant && props.data.restaurant.activities[0].description}
+                {props.data && props.data.activities && props.data.activities[0].description}
                 (不与其他活动共享)
               </span>
               <span className="hui">
-              {props.data.restaurant && props.data.restaurant.activities.length}个优惠券
+              {props.data && props.data.activities && props.data.activities.length}个优惠券
               <Icon type="down" size="xxs"></Icon>
               </span>
             </div>
             <p className="notice">
-              {props.data.restaurant && props.data.restaurant.promotion_info}
+              {props.data && props.data.promotion_info}
             </p>
           </div>
         </div>
